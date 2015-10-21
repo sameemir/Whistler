@@ -1,0 +1,34 @@
+﻿<Page
+    x:Class="Whistler.View.CategoryDetails"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Whistler.View"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+      DataContext="{Binding MainCategoriesViewModel, Source={StaticResource Locator}}"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    
+    <Grid>
+        <ListView
+			ItemsSource="{Binding SelectedCategory.subcategories, Mode=TwoWay}"
+            >
+            <ListView.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapGrid MaximumRowsOrColumns="3" Orientation="Horizontal" HorizontalAlignment="Center"/>
+                </ItemsPanelTemplate>
+            </ListView.ItemsPanel>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Grid x:ConnectionId='1' Margin="5,5,5,5"                     >
+                        <Rectangle Fill="White" Width="115" Height="100"/>
+                        <Image Margin="0,0,10,0" Height="50" Width="50" HorizontalAlignment="Center" VerticalAlignment="Center"  Source="{Binding image}"></Image>
+                        <TextBlock Margin="0,70,0,0" Foreground="#79A6A8" HorizontalAlignment="Center" VerticalAlignment="Center" Text="{Binding label}"/>
+                    </Grid>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+
+        </ListView>
+    </Grid>
+</Page>
+

@@ -1,0 +1,105 @@
+﻿<Page
+    x:Class="Whistler.View.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Whistler.View"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    DataContext="{Binding MainPageViewModel, Mode=TwoWay, Source={StaticResource Locator}}">
+
+    <Page.BottomAppBar>
+       
+            <CommandBar x:Name="commandBarButton">
+                <CommandBar.SecondaryCommands>
+                    <AppBarButton Label="option 1" Icon="Add"/>
+                    <AppBarButton Label="option 2" Icon="Favorite"/>
+                    <AppBarToggleButton Label="option 3" Icon="DisableUpdates"/>
+                </CommandBar.SecondaryCommands>
+            </CommandBar>
+
+    </Page.BottomAppBar>
+
+    <Grid Background="#016064">
+        <Grid.RowDefinitions>
+            <RowDefinition Height=".025*"></RowDefinition>
+            <RowDefinition Height=".2*"></RowDefinition>
+            <RowDefinition Height=".135*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width=".1*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="Auto"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Image HorizontalAlignment="Right" 
+               Grid.ColumnSpan="3" 
+               Height="20"
+               Source="ms-appx:///Assets/addIcon.png">
+
+        </Image>
+
+        <Image Height="80" Margin="-15,20,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" Width="150" Grid.Row="1" Grid.Column="1" Source="ms-appx:///Assets/home-logo.png"></Image>
+        <TextBlock Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" Margin="20,-65,0,0" Text="We Sent you a code" FontSize="30" FontWeight="Bold" Foreground="White"></TextBlock>
+        <TextBox Grid.Row="1" Grid.ColumnSpan="3" Margin="10,50,10,0" VerticalAlignment="Center" PlaceholderText="ENTER THE 6 DIGIT CODE" ></TextBox>
+        <TextBlock Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Text="Didn't get an SMS?" Foreground="White" FontSize="18" Margin="10,0,0,50" VerticalAlignment="Bottom"></TextBlock>
+        <Image Grid.Row="1" Grid.Column="1" HorizontalAlignment="Right" Height="40" Margin="0,0,10,50" Source="ms-appx:///Assets/resendButton.png" VerticalAlignment="Bottom"></Image>
+        <Image Width="50" VerticalAlignment="Bottom" Canvas.ZIndex="5" Margin="148,0,165,193" Grid.Row="1" Grid.Column="1" Source="ms-appx:///Assets/orImage.png" HorizontalAlignment="Center" Grid.RowSpan="2"></Image>
+
+        <Grid Background="#232323" Grid.Row="2" Grid.ColumnSpan="3">
+            <Grid.RowDefinitions>
+                <RowDefinition Height=".3*"></RowDefinition>
+                <RowDefinition Height=".2*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width=".5*"></ColumnDefinition>
+                <ColumnDefinition Width=".5*"></ColumnDefinition>
+
+            </Grid.ColumnDefinitions>
+            
+            <StackPanel Tapped="StackPanel_Tapped" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.ColumnSpan="2">
+            <TextBlock FontSize="18" Foreground="White">
+                <Run Text="CHANGE"/>
+                <Run Text=" MOBILE NUMBER" FontWeight="Bold"></Run>
+                    
+            </TextBlock>
+            <Image Tag="right" x:Name="coneIcon" Height="25"  Margin="15,0,0,0" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" Source="ms-appx:///Assets/coneShapeIcon.png"></Image>
+            </StackPanel>
+            <StackPanel Margin="0,15,0,0" x:Name="enterNumberAgain" Visibility="Collapsed" Orientation="Horizontal" Grid.ColumnSpan="2">
+                <TextBox Width="280"  Margin="10,65,10,0" VerticalAlignment="Center" PlaceholderText="ENTER THE 6 DIGIT CODE" ></TextBox>
+                <Image Tapped="Image_Tapped" Height="40" Margin="0,65,10,0" VerticalAlignment="Center" Source="ms-appx:///Assets/okButton.png"/>
+            </StackPanel>
+            <Image x:Name="doneButton" Tapped="doneButton_Tapped" Grid.Column="0" Grid.Row="1" Source="ms-appx:///Assets/doneButton.png" ></Image>
+            <Image x:Name="resetButton" Grid.Column="1" Grid.Row="1" Source="ms-appx:///Assets/resetButton.png" ></Image>
+            </Grid>
+        <Grid Grid.Row="0" 
+              Grid.RowSpan="3"
+              Grid.Column="0"
+              Grid.ColumnSpan="2"
+              Visibility="{Binding GridVisibility}" 
+              VerticalAlignment="Stretch"
+              Margin="0,0,0,0" 
+              Opacity="0.5" 
+              Background="Black"
+              HorizontalAlignment="Stretch">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100" />
+                <RowDefinition Height="100" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <TextBlock Grid.Row="2" Text="Loading..." FontSize="24" Foreground="White" HorizontalAlignment="Center"/>
+
+            <ProgressBar Grid.Row="1" IsIndeterminate="{Binding IsActive}"/>
+
+        </Grid>
+    </Grid>
+    
+</Page>
