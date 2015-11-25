@@ -1,0 +1,6 @@
+﻿[ResourceMetadata]
+"ResourceId"			"split.language-ja"
+"ResourceDimensions"		"language-ja-jp"
+
+[Files]
+"C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\Whistler\obj\ARM\Release\split.language-ja.pri"			"resources.pri"

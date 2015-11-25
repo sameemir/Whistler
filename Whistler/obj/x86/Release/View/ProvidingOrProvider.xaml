@@ -1,0 +1,74 @@
+﻿<Page
+    x:Class="Whistler.View.ProvidingOrProvider"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Whistler.View"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="Beige"
+     DataContext="{Binding MainCategoriesViewModel, Source={StaticResource Locator}}"
+   >
+
+    <Grid HorizontalAlignment="Left" Margin="0,0.333,0,-0.333" Width="400">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="13*"/>
+            <ColumnDefinition Width="7*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height=".4*"></RowDefinition>
+            <RowDefinition Height=".4*"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Border Grid.Row="0" 
+                Background="Black"
+                Opacity="100"
+                Height="80" 
+                Margin="0,195,0,45" Grid.ColumnSpan="2" 
+                >
+
+            <StackPanel 
+                Orientation="Horizontal">
+
+                <TextBlock TextWrapping="Wrap" 
+                           FontSize="30" 
+                           Margin=" 20"   
+                           HorizontalAlignment="Center" 
+                           VerticalAlignment="Center" >
+                    <Run>Providing </Run>
+                    <Run Text="{Binding SelectedCategory.name}"></Run>
+                </TextBlock>
+
+                <Image Height="45" Width="45" Source="ms-appx:///Assets/arrowIcon.png"></Image>
+            </StackPanel>
+
+        </Border>
+
+        <Border Grid.Row="1" 
+                Background="Black" 
+                Height="80" 
+                Margin="0,170,0,70" 
+                Opacity="100" 
+                Grid.ColumnSpan="2">
+
+            <StackPanel 
+                Orientation="Horizontal">
+
+                <TextBlock TextWrapping="Wrap" 
+                           FontSize="30"
+                           Margin="20"
+                           HorizontalAlignment="Center" 
+                           VerticalAlignment="Center" >
+                    <Run>Looking </Run>
+                    <Run Text="{Binding SelectedCategory.name}"></Run>
+                </TextBlock>
+
+                <Image Height="45" Width="45"  Source="ms-appx:///Assets/arrowIcon.png"></Image>
+            </StackPanel>
+
+        </Border>
+
+    </Grid>
+</Page>
+

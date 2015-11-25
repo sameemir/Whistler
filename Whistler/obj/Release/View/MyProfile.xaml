@@ -1,0 +1,68 @@
+﻿<Page
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Whistler.View"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:ViewModel="using:Whistler.ViewModel"
+    x:Class="Whistler.View.MyProfile"
+    mc:Ignorable="d"
+    Background="White">
+
+    <Page.BottomAppBar>
+        <CommandBar>
+            <AppBarButton Label="Category" Icon="Account"/>
+            <AppBarButton Label="Settings" Icon="Add"/>
+            <AppBarButton Label="Whistles" Icon="AllApps"/>
+            <AppBarButton Label="More"  Icon="AttachCamera"/>
+        </CommandBar>
+    </Page.BottomAppBar>
+
+    <Page.DataContext>
+        <ViewModel:MyProfileViewModel/>
+    </Page.DataContext>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height=".15*"/>
+            <RowDefinition Height=".3*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Background="#016064">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width=".9*"/>
+                <ColumnDefinition Width=".2*"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock 
+				Text="My Profile" 
+				Grid.Row="0"
+				HorizontalAlignment="Left" 
+				VerticalAlignment="Center" 
+				FontSize="20" 
+				Margin="15"/>
+        </Grid>
+        <Image x:Name="imageDp" Source="{Binding AppUser.newUser.photo}" Grid.Row="1" />
+        <Button x:ConnectionId='1' x:Name="buttonAddImage" Tag="{Binding AppUser.newUser.photo}"                                                               Foreground="Black" HorizontalAlignment="Center" Content="Click to add image" VerticalAlignment="Center" Grid.Row="1">
+            <Button.Background>
+                <ImageBrush ImageSource="AttachCamera" />
+            </Button.Background>
+        </Button>
+        <StackPanel Grid.Row="3">
+            <TextBox BorderThickness="1" Text="{Binding AppUser.newUser.name}" Margin="10" BorderBrush="Black" x:Name="textboxName" PlaceholderText="Please Enter Your Name" />
+            <TextBox x:ConnectionId='4' x:Name="textboxPhone" Text="{Binding AppUser.newUser.phone}"                              Margin="10" BorderBrush="Black" BorderThickness="1"  PlaceholderText="Enter Your No. with Country Code"/>
+
+            <RadioButton x:Name="radioButtonShowPhone" IsChecked="True" Margin="10" Content="Show phone number to Others" Foreground="Black" Style="{StaticResource RadioButtonStyle1}"/>
+            <RadioButton x:Name="radioButtonShowSMS"  IsChecked="True" Margin="10,0,10,10" Content="Show sms to Others" Foreground="Black" Style="{StaticResource RadioButtonStyle1}"/>
+        </StackPanel>
+        <Grid Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Bottom">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Image x:ConnectionId='2' x:Name="doneButton" Grid.Column="0"                            Width="Auto" Margin="5" Source="ms-appx:///Assets/save.png" Height="50" />
+            <Image x:ConnectionId='3' x:Name="resetButton"                             Grid.Column="1" Margin="5" Source="ms-appx:///Assets/resetButton.png" Height="44" />
+        </Grid>
+    </Grid>
+</Page>
+

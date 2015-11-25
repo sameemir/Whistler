@@ -1,0 +1,60 @@
+﻿<Page
+    x:Class="Whistler.View.MorePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Whistler.View"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="White">
+    <Page.BottomAppBar>
+        <CommandBar>
+            <AppBarButton Label="Category" Icon="Account"/>
+            <AppBarButton Label="Settings" Icon="Add"/>
+            <AppBarButton Label="Whistles" Icon="AllApps"/>
+            <AppBarButton Label="More"  Icon="AttachCamera"/>
+        </CommandBar>
+    </Page.BottomAppBar>
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Background="#016064">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width=".9*"></ColumnDefinition>
+                <ColumnDefinition Width=".2*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <TextBlock Text="More" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="20" Margin="15"></TextBlock>
+        </Grid>
+        
+        <StackPanel Grid.Row="1" Orientation="Vertical">
+                <Border Margin="10" BorderBrush="Black" BorderThickness="0,0,0,2">
+                    <StackPanel Orientation="Horizontal" Tapped="StackPanel_Tapped">
+                        <Image Height="20" Source="ms-appx:///Assets/mapIcon-1.png"></Image>
+                        <TextBlock x:Name="textblockProfile" Foreground="Black" Margin="10" FontSize="30" Text="Profile"></TextBlock>
+                    </StackPanel>
+                </Border>
+            <Border Margin="10" BorderBrush="Black" BorderThickness="0,0,0,2">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Height="20" Source="ms-appx:///Assets/mapIcon-2.png"></Image>
+                    <TextBlock x:Name="textblockMyWhistle" Text="My Whistle" Foreground="Black" Margin="10" FontSize="30" ></TextBlock>
+                    </StackPanel>
+                </Border>
+            <Border Margin="10" BorderBrush="Black" BorderThickness="0,0,0,2">
+                    <StackPanel x:Name="stackpanelPrivacyPolicy" Tapped="stackpanelPrivacyPolicy_Tapped" Orientation="Horizontal">
+                        <Image Height="20" Source="ms-appx:///Assets/mapIcon-3.png"></Image>
+                    <TextBlock x:Name="textblockPrivacy" Text="Privacy Policy" Foreground="Black" Margin="10" FontSize="30" ></TextBlock>
+                    </StackPanel>
+                </Border>
+            <Border Margin="10" BorderBrush="Black" BorderThickness="0,0,0,2">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Height="20" Source="ms-appx:///Assets/mapIcon-4.png" ></Image>
+                    <TextBlock x:Name="Help" Text="Help" Foreground="Black" Margin="10" FontSize="30" ></TextBlock>
+                    </StackPanel>
+                </Border>
+            </StackPanel>
+        </Grid>
+</Page>

@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PriInfo>
+	<ResourceMap name="OneWhistleInc.DoWhistle" version="1.0" primary="true">
+		<Qualifiers>
+			<Language>EN-US</Language>
+			<Scale>240</Scale>
+		</Qualifiers>
+		<ResourceMapSubtree name="Files">
+			<NamedResource name="App.xbf" uri="ms-resource://OneWhistleInc.DoWhistle/Files/App.xbf">
+				<Candidate type="Path">
+					<Value>App.xbf</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Whistler.xr.xml" uri="ms-resource://OneWhistleInc.DoWhistle/Files/Whistler.xr.xml">
+				<Candidate type="Path">
+					<Value>Whistler.xr.xml</Value>
+				</Candidate>
+			</NamedResource>
+			<ResourceMapSubtree name="Assets">
+				<NamedResource name="addIcon.png" uri="ms-resource://OneWhistleInc.DoWhistle/Files/Assets/addIcon.png">
+					<Candidate type="Path">
+						<Value>Assets\addIcon.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="AddImage.png" uri="ms-resource://OneWhistleInc.DoWhistle/Files/Assets/AddImage.png">
+					<Candidate type="Path">
+						<Value>Assets\AddImage.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="arrowIcon.png" uri="ms-resource://OneWhistleInc.DoWhistle/Files/Assets/arrowIcon.png">
+					<Candidate type="Path">
+						<Value>Assets\arrowIcon.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="AutoService_SC.jpg" uri="ms-resource://OneWhistleInc.DoWhistle/Files/Assets/AutoService_SC.jpg">
+					<Candidate type="Path">
+						<Value>Assets\AutoService_SC.jpg</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="bg.png" uri="ms-resource://OneWhistleInc.DoWhistle/Files/Assets/bg.png">
+					<Candidate type="Path">
+						<Value>Assets\bg.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="blooddonorIcon.png" uri="ms-resource://OneWhistleInc.DoWhistle/Files/Assets/blooddonorIcon.png">
+					<Candidate type="Path">
+						<Value>Assets\blooddonorIcon.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="BloodDonor_SC.jpg" uri="ms-resource://OneWhistleInc.DoWhistle/Files/Assets/BloodDonor_SC.jpg">
+					<Candidate type="Path">
+						<Value>Assets\BloodDonor_SC.jpg</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="boxIcon.png" uri="ms-resource://OneWhistleInc.DoWhistle/Files/Assets/boxIcon.png">
+					<Candidate type="Path">
+						<Value>Assets\boxIcon.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="callIcon.png" uri="ms-resource://OneWhistleInc.DoWhistle/Files/Assets/callIcon.png">
+					<Candidate type="Path">
+						<Value>Assets\callIcon.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="ChangePic.png" uri="ms-resource://OneWhistleInc.DoWhistle/Files/Assets/ChangePic.png">
+					<Candidate type="Path">
+						<Value>Assets\ChangePic.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="codeTextBG.png" uri="ms-resource://OneWhistleInc.DoWhistle/Files/Assets/codeTextBG.png">
+					<Candidate type="Path">
+						<Value>Assets\codeTextBG.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="communityIcon.png" uri="ms-resource://OneWhistleInc.DoWhistle/Files/Assets/communityIcon.png">
+					<Candidate type="Path">
+						<Value>Assets\communityIcon.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Community_SC.jpg" uri="ms-resource://OneWhistleInc.DoWhistle/Files/Assets/Community_SC.jpg">
+					<Candidate type="Path">
+						<Value>Assets\Community_SC.jpg</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="coneShapeIcon - left.png" uri="ms-resource://OneWhistleInc.DoWhistle/Files/Assets/coneShapeIcon%20-%20left.png">
+					<Candidate type="Path">
+						<Value>Assets\coneShapeIcon - left.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="coneShapeIcon.png" uri="ms-resource://OneWhistleInc.DoWhistle/Files/Assets/coneShapeIcon.png">
+					<Candidate type="Path">
+						<Value>Assets\coneShapeIcon.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="deliveryIcon.png" uri="ms-resource://OneWhistleInc.DoWhistle/Files/Assets/deliveryIcon.png">
+					<Candidate type="Path">
+						<Value>Assets\deliveryIcon.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Delivery_SC.jpg" uri="ms-resource://OneWhistleInc.DoWhistle/Files/Assets/Delivery_SC.jpg">
+					<Candidate type="Path">
+						<Value>Assets\Delivery_SC.jpg</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="dislikeIcon.png" uri="ms-resource://OneWhistleInc.DoWhistle/Files/Assets/dislikeIcon.png">
+					<Candidate type="Path">
+						<Value>Assets\dislikeIcon.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="doneButton.png" uri="ms-resource://OneWhistleInc.DoWhistle/Files/Assets/doneButton.png">
+					<Candidate type="Path">
+						<Value>Assets\doneButton.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="driveShareIcon.png" uri="ms-resource://OneWhistleInc.DoWhistle/Files/Assets/driveShareIcon.png">
+					<Candidate type="Path">
+						<Value>Assets\driveShareIcon.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="EverythingElse_SC.jpg" uri="ms-resource://OneWhistleInc.DoWhistle/Files/Assets/EverythingElse_SC.jpg">
+					<Candidate type="Path">
+						<Value>Assets\EverythingElse_SC.jpg</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="firstAidIcon.png" uri="ms-resource://OneWhistleInc.DoWhistle/Files/Assets/firstAidIcon.png">
+					<Candidate type="Path">
+						<Value>Assets\firstAidIcon.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="FirstAid_SC.jpg" uri="ms-resource://OneWhistleInc.DoWhistle/Files/Assets/FirstAid_SC.jpg">
+					<Candidate type="Path">
+						<Value>Assets\FirstAid_SC.jpg</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="food-sub1.png" uri="ms-resource://OneWhistleInc.DoWhistle/Files/Assets/food-sub1.png">
+					<Candidate type="Path">
+						<Value>Assets\food-sub1.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="food-sub2.png" uri="ms-resource://OneWhistleInc.DoWhistle/Files/Assets/food-sub2.png">
+					<Candidate type="Path">
+						<Value>Assets\food-sub2.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="food-sub3.png" uri="ms-resource://OneWhistleInc.DoWhistle/Files/Assets/food-sub3.png">
+					<Candidate type="Path">
+						<Value>Assets\food-sub3.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="food-sub4.png" uri="ms-resource://OneWhistleInc.DoWhistle/Files/Assets/food-sub4.png">
+					<Candidate type="Path">
+						<Value>Assets\food-sub4.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="food-sub5.png" uri="ms-resource://OneWhistleInc.DoWhistle/Files/Assets/food-sub5.png">
+					<Candidate type="Path">
+						<Value>Assets\food-sub5.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="foodIcon.png" uri="ms-resource://OneWhistleInc.DoWhistle/Files/Assets/foodIcon.png">
+					<Candidate type="Path">
+						<Value>Assets\foodIcon.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="foodSearchIcon.png" uri="ms-resource://OneWhistleInc.DoWhistle/Files/Assets/foodSearchIcon.png">
+					<Candidate type="Path">
+						<Value>Assets\foodSearchIcon.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Food_SC.jpg" uri="ms-resource://OneWhistleInc.DoWhistle/Files/Assets/Food_SC.jpg">
+					<Candidate type="Path">
+						<Value>Assets\Food_SC.jpg</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="home-logo.png" uri="ms-resource://OneWhistleInc.DoWhistle/Files/Assets/home-logo.png">
+					<Candidate type="Path">
+						<Value>Assets\home-logo.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="imageBG.png" uri="ms-resource://OneWhistleInc.DoWhistle/Files/Assets/imageBG.png">
+					<Candidate type="Path">
+						<Value>Assets\imageBG.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="labelTransparentBG.png" uri="ms-resource://OneWhistleInc.DoWhistle/Files/Assets/labelTransparentBG.png">
+					<Candidate type="Path">
+						<Value>Assets\labelTransparentBG.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="likeIcon.png" uri="ms-resource://OneWhistleInc.DoWhistle/Files/Assets/likeIcon.png">
+					<Candidate type="Path">
+						<Value>Assets\likeIcon.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Loan_SC.jpg" uri="ms-resource://OneWhistleInc.DoWhistle/Files/Assets/Loan_SC.jpg">
+					<Candidate type="Path">
+						<Value>Assets\Loan_SC.jpg</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Logo.png" uri="ms-resource://OneWhistleInc.DoWhistle/Files/Assets/Logo.png">
+					<Candidate qualifiers="Scale-240" isDefault="true" type="Path">
+						<Value>Assets\Logo.scale-240.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="mapDetailBG.png" uri="ms-resource://OneWhistleInc.DoWhistle/Files/Assets/mapDetailBG.png">
+					<Candidate type="Path">
+						<Value>Assets\mapDetailBG.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="mapIcon-1.png" uri="ms-resource://OneWhistleInc.DoWhistle/Files/Assets/mapIcon-1.png">
+					<Candidate type="Path">
+						<Value>Assets\mapIcon-1.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="mapIcon-2.png" uri="ms-resource://OneWhistleInc.DoWhistle/Files/Assets/mapIcon-2.png">
+					<Candidate type="Path">
+						<Value>Assets\mapIcon-2.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="mapIcon-3.png" uri="ms-resource://OneWhistleInc.DoWhistle/Files/Assets/mapIcon-3.png">
+					<Candidate type="Path">
+						<Value>Assets\mapIcon-3.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="mapIcon-4.png" uri="ms-resource://OneWhistleInc.DoWhistle/Files/Assets/mapIcon-4.png">
+					<Candidate type="Path">
+						<Value>Assets\mapIcon-4.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="messageIcon.png" uri="ms-resource://OneWhistleInc.DoWhistle/Files/Assets/messageIcon.png">
+					<Candidate type="Path">
+						<Value>Assets\messageIcon.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="mobileNumbetTextBG.png" uri="ms-resource://OneWhistleInc.DoWhistle/Files/Assets/mobileNumbetTextBG.png">
+					<Candidate type="Path">
+						<Value>Assets\mobileNumbetTextBG.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="nextButton.png" uri="ms-resource://OneWhistleInc.DoWhistle/Files/Assets/nextButton.png">
+					<Candidate type="Path">
+						<Value>Assets\nextButton.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="okButton.png" uri="ms-resource://OneWhistleInc.DoWhistle/Files/Assets/okButton.png">
+					<Candidate type="Path">
+						<Value>Assets\okButton.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Organic_SC.jpg" uri="ms-resource://OneWhistleInc.DoWhistle/Files/Assets/Organic_SC.jpg">
+					<Candidate type="Path">
+						<Value>Assets\Organic_SC.jpg</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="orImage.png" uri="ms-resource://OneWhistleInc.DoWhistle/Files/Assets/orImage.png">
+					<Candidate type="Path">
+						<Value>Assets\orImage.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="personalIcon.png" uri="ms-resource://OneWhistleInc.DoWhistle/Files/Assets/personalIcon.png">
+					<Candidate type="Path">
+						<Value>Assets\personalIcon.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Personals_SC.jpg" uri="ms-resource://OneWhistleInc.DoWhistle/Files/Assets/Personals_SC.jpg">
+					<Candidate type="Path">
+						<Value>Assets\Personals_SC.jpg</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="pic1.png" uri="ms-resource://OneWhistleInc.DoWhistle/Files/Assets/pic1.png">
+					<Candidate type="Path">
+						<Value>Assets\pic1.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="pic2.png" uri="ms-resource://OneWhistleInc.DoWhistle/Files/Assets/pic2.png">
+					<Candidate type="Path">
+						<Value>Assets\pic2.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="previousButton.png" uri="ms-resource://OneWhistleInc.DoWhistle/Files/Assets/previousButton.png">
+					<Candidate type="Path">
+						<Value>Assets\previousButton.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Rent_SC.jpg" uri="ms-resource://OneWhistleInc.DoWhistle/Files/Assets/Rent_SC.jpg">
+					<Candidate type="Path">
+						<Value>Assets\Rent_SC.jpg</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="resendButton.png" uri="ms-resource://OneWhistleInc.DoWhistle/Files/Assets/resendButton.png">
+					<Candidate type="Path">
+						<Value>Assets\resendButton.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="reset.png" uri="ms-resource://OneWhistleInc.DoWhistle/Files/Assets/reset.png">
+					<Candidate type="Path">
+						<Value>Assets\reset.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="resetButton.png" uri="ms-resource://OneWhistleInc.DoWhistle/Files/Assets/resetButton.png">
+					<Candidate type="Path">
+						<Value>Assets\resetButton.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="RideShare_SC.jpg" uri="ms-resource://OneWhistleInc.DoWhistle/Files/Assets/RideShare_SC.jpg">
+					<Candidate type="Path">
+						<Value>Assets\RideShare_SC.jpg</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="saleIcon.png" uri="ms-resource://OneWhistleInc.DoWhistle/Files/Assets/saleIcon.png">
+					<Candidate type="Path">
+						<Value>Assets\saleIcon.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Sale_SC.jpg" uri="ms-resource://OneWhistleInc.DoWhistle/Files/Assets/Sale_SC.jpg">
+					<Candidate type="Path">
+						<Value>Assets\Sale_SC.jpg</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="save.png" uri="ms-resource://OneWhistleInc.DoWhistle/Files/Assets/save.png">
+					<Candidate type="Path">
+						<Value>Assets\save.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="servicesIcon.png" uri="ms-resource://OneWhistleInc.DoWhistle/Files/Assets/servicesIcon.png">
+					<Candidate type="Path">
+						<Value>Assets\servicesIcon.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Service_SC.jpg" uri="ms-resource://OneWhistleInc.DoWhistle/Files/Assets/Service_SC.jpg">
+					<Candidate type="Path">
+						<Value>Assets\Service_SC.jpg</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="SmallLogo.png" uri="ms-resource://OneWhistleInc.DoWhistle/Files/Assets/SmallLogo.png">
+					<Candidate qualifiers="Scale-240" isDefault="true" type="Path">
+						<Value>Assets\SmallLogo.scale-240.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="SplashScreen.png" uri="ms-resource://OneWhistleInc.DoWhistle/Files/Assets/SplashScreen.png">
+					<Candidate qualifiers="Scale-240" isDefault="true" type="Path">
+						<Value>Assets\SplashScreen.scale-240.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Square71x71Logo.png" uri="ms-resource://OneWhistleInc.DoWhistle/Files/Assets/Square71x71Logo.png">
+					<Candidate qualifiers="Scale-240" isDefault="true" type="Path">
+						<Value>Assets\Square71x71Logo.scale-240.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="StoreLogo.png" uri="ms-resource://OneWhistleInc.DoWhistle/Files/Assets/StoreLogo.png">
+					<Candidate qualifiers="Scale-240" isDefault="true" type="Path">
+						<Value>Assets\StoreLogo.scale-240.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="takePhoto.png" uri="ms-resource://OneWhistleInc.DoWhistle/Files/Assets/takePhoto.png">
+					<Candidate type="Path">
+						<Value>Assets\takePhoto.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="taxiIcon.png" uri="ms-resource://OneWhistleInc.DoWhistle/Files/Assets/taxiIcon.png">
+					<Candidate type="Path">
+						<Value>Assets\taxiIcon.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Taxi_SC.jpg" uri="ms-resource://OneWhistleInc.DoWhistle/Files/Assets/Taxi_SC.jpg">
+					<Candidate type="Path">
+						<Value>Assets\Taxi_SC.jpg</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Tickets_SC.jpg" uri="ms-resource://OneWhistleInc.DoWhistle/Files/Assets/Tickets_SC.jpg">
+					<Candidate type="Path">
+						<Value>Assets\Tickets_SC.jpg</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="trackIcon.png" uri="ms-resource://OneWhistleInc.DoWhistle/Files/Assets/trackIcon.png">
+					<Candidate type="Path">
+						<Value>Assets\trackIcon.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Track_SC.jpg" uri="ms-resource://OneWhistleInc.DoWhistle/Files/Assets/Track_SC.jpg">
+					<Candidate type="Path">
+						<Value>Assets\Track_SC.jpg</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="TravelHelp_SC.jpg" uri="ms-resource://OneWhistleInc.DoWhistle/Files/Assets/TravelHelp_SC.jpg">
+					<Candidate type="Path">
+						<Value>Assets\TravelHelp_SC.jpg</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="WideLogo.png" uri="ms-resource://OneWhistleInc.DoWhistle/Files/Assets/WideLogo.png">
+					<Candidate qualifiers="Scale-240" isDefault="true" type="Path">
+						<Value>Assets\WideLogo.scale-240.png</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="Styles">
+				<NamedResource name="Colors.xbf" uri="ms-resource://OneWhistleInc.DoWhistle/Files/Styles/Colors.xbf">
+					<Candidate type="Path">
+						<Value>Styles\Colors.xbf</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="MainStyles.xbf" uri="ms-resource://OneWhistleInc.DoWhistle/Files/Styles/MainStyles.xbf">
+					<Candidate type="Path">
+						<Value>Styles\MainStyles.xbf</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Styles.xbf" uri="ms-resource://OneWhistleInc.DoWhistle/Files/Styles/Styles.xbf">
+					<Candidate type="Path">
+						<Value>Styles\Styles.xbf</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="TextStyles.xbf" uri="ms-resource://OneWhistleInc.DoWhistle/Files/Styles/TextStyles.xbf">
+					<Candidate type="Path">
+						<Value>Styles\TextStyles.xbf</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="View">
+				<NamedResource name="CategoryDetails.xbf" uri="ms-resource://OneWhistleInc.DoWhistle/Files/View/CategoryDetails.xbf">
+					<Candidate type="Path">
+						<Value>View\CategoryDetails.xbf</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="CreateWhistlePage.xbf" uri="ms-resource://OneWhistleInc.DoWhistle/Files/View/CreateWhistlePage.xbf">
+					<Candidate type="Path">
+						<Value>View\CreateWhistlePage.xbf</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="LookingFor.xbf" uri="ms-resource://OneWhistleInc.DoWhistle/Files/View/LookingFor.xbf">
+					<Candidate type="Path">
+						<Value>View\LookingFor.xbf</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="MainCategories.xbf" uri="ms-resource://OneWhistleInc.DoWhistle/Files/View/MainCategories.xbf">
+					<Candidate type="Path">
+						<Value>View\MainCategories.xbf</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="MainPage.xbf" uri="ms-resource://OneWhistleInc.DoWhistle/Files/View/MainPage.xbf">
+					<Candidate type="Path">
+						<Value>View\MainPage.xbf</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="MorePage.xbf" uri="ms-resource://OneWhistleInc.DoWhistle/Files/View/MorePage.xbf">
+					<Candidate type="Path">
+						<Value>View\MorePage.xbf</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="MyProfile.xbf" uri="ms-resource://OneWhistleInc.DoWhistle/Files/View/MyProfile.xbf">
+					<Candidate type="Path">
+						<Value>View\MyProfile.xbf</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="PrivacyStatement.xbf" uri="ms-resource://OneWhistleInc.DoWhistle/Files/View/PrivacyStatement.xbf">
+					<Candidate type="Path">
+						<Value>View\PrivacyStatement.xbf</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="ProvidingOrProvider.xbf" uri="ms-resource://OneWhistleInc.DoWhistle/Files/View/ProvidingOrProvider.xbf">
+					<Candidate type="Path">
+						<Value>View\ProvidingOrProvider.xbf</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="SettingsPage.xbf" uri="ms-resource://OneWhistleInc.DoWhistle/Files/View/SettingsPage.xbf">
+					<Candidate type="Path">
+						<Value>View\SettingsPage.xbf</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="SignUpPage.xbf" uri="ms-resource://OneWhistleInc.DoWhistle/Files/View/SignUpPage.xbf">
+					<Candidate type="Path">
+						<Value>View\SignUpPage.xbf</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+		<ResourceMapSubtree name="Microsoft.Practices.ServiceLocation.Properties.Resources">
+			<NamedResource name="ActivateAllExceptionMessage" uri="ms-resource://OneWhistleInc.DoWhistle/Microsoft.Practices.ServiceLocation.Properties.Resources/ActivateAllExceptionMessage">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Activation error occurred while trying to get all instances of type {0}</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ActivationExceptionMessage" uri="ms-resource://OneWhistleInc.DoWhistle/Microsoft.Practices.ServiceLocation.Properties.Resources/ActivationExceptionMessage">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Activation error occurred while trying to get instance of type {0}, key "{1}"</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ServiceLocationProviderNotSetMessage" uri="ms-resource://OneWhistleInc.DoWhistle/Microsoft.Practices.ServiceLocation.Properties.Resources/ServiceLocationProviderNotSetMessage">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>ServiceLocationProvider must be set.</Value>
+				</Candidate>
+			</NamedResource>
+		</ResourceMapSubtree>
+		<ResourceMapSubtree name="Microsoft.Xaml.Interactions">
+			<ResourceMapSubtree name="Strings">
+				<NamedResource name="CallMethodActionValidMethodNotFoundExceptionMessage" uri="ms-resource://OneWhistleInc.DoWhistle/Microsoft.Xaml.Interactions/Strings/CallMethodActionValidMethodNotFoundExceptionMessage">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Cannot find method named {0} on object of type {1} that matches the expected signature.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="CannotAttachBehaviorMultipleTimesExceptionMessage" uri="ms-resource://OneWhistleInc.DoWhistle/Microsoft.Xaml.Interactions/Strings/CannotAttachBehaviorMultipleTimesExceptionMessage">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>An instance of a behavior cannot be attached to more than one object at a time.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="CannotFindEventNameExceptionMessage" uri="ms-resource://OneWhistleInc.DoWhistle/Microsoft.Xaml.Interactions/Strings/CannotFindEventNameExceptionMessage">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Cannot find an event named {0} on type {1}.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="ChangePropertyActionCannotFindPropertyNameExceptionMessage" uri="ms-resource://OneWhistleInc.DoWhistle/Microsoft.Xaml.Interactions/Strings/ChangePropertyActionCannotFindPropertyNameExceptionMessage">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Cannot find a property named {0} on type {1}.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="ChangePropertyActionCannotSetValueExceptionMessage" uri="ms-resource://OneWhistleInc.DoWhistle/Microsoft.Xaml.Interactions/Strings/ChangePropertyActionCannotSetValueExceptionMessage">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Cannot assign value of type {0} to property {1} of type {2}. The {1} property can be assigned only values of type {2}.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="ChangePropertyActionPropertyIsReadOnlyExceptionMessage" uri="ms-resource://OneWhistleInc.DoWhistle/Microsoft.Xaml.Interactions/Strings/ChangePropertyActionPropertyIsReadOnlyExceptionMessage">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Property {0} defined by type {1} does not expose a set method and therefore cannot be modified.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="EventNotSupportedExceptionMessage" uri="ms-resource://OneWhistleInc.DoWhistle/Microsoft.Xaml.Interactions/Strings/EventNotSupportedExceptionMessage">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Event {0} is not supported. Consider implementing a custom IBehavior to respond to this event.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="GoToStateActionTargetHasNoStateGroups" uri="ms-resource://OneWhistleInc.DoWhistle/Microsoft.Xaml.Interactions/Strings/GoToStateActionTargetHasNoStateGroups">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Target {0} does not define any VisualStateGroups.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="InvalidLeftOperand" uri="ms-resource://OneWhistleInc.DoWhistle/Microsoft.Xaml.Interactions/Strings/InvalidLeftOperand">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Binding property of type {0} cannot be used with operator {1}.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="InvalidOperands" uri="ms-resource://OneWhistleInc.DoWhistle/Microsoft.Xaml.Interactions/Strings/InvalidOperands">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Binding property of type {0} and Value property of type {1} cannot be used with operator {2}.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="InvalidRightOperand" uri="ms-resource://OneWhistleInc.DoWhistle/Microsoft.Xaml.Interactions/Strings/InvalidRightOperand">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Value property of type {0} cannot be used with operator {1}.</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+		<ResourceMapSubtree name="Microsoft.Xaml.Interactivity">
+			<ResourceMapSubtree name="Strings">
+				<NamedResource name="CannotAttachBehaviorMultipleTimesExceptionMessage" uri="ms-resource://OneWhistleInc.DoWhistle/Microsoft.Xaml.Interactivity/Strings/CannotAttachBehaviorMultipleTimesExceptionMessage">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>An instance of a behavior cannot be attached to more than one object at a time.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="DuplicateBehaviorInCollectionExceptionMessage" uri="ms-resource://OneWhistleInc.DoWhistle/Microsoft.Xaml.Interactivity/Strings/DuplicateBehaviorInCollectionExceptionMessage">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Cannot add an instance of a behavior to a BehaviorCollection more than once.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="NonActionAddedToActionCollectionExceptionMessage" uri="ms-resource://OneWhistleInc.DoWhistle/Microsoft.Xaml.Interactivity/Strings/NonActionAddedToActionCollectionExceptionMessage">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Only IAction types are supported in an ActionCollection.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="NonBehaviorAddedToBehaviorCollectionExceptionMessage" uri="ms-resource://OneWhistleInc.DoWhistle/Microsoft.Xaml.Interactivity/Strings/NonBehaviorAddedToBehaviorCollectionExceptionMessage">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Only IBehavior types are supported in a BehaviorCollection.</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+	</ResourceMap>
+</PriInfo>

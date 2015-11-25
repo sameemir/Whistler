@@ -124,31 +124,37 @@ namespace Whistler.Whistler_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[11];
+            _typeNameTable = new string[14];
             _typeNameTable[0] = "Whistler.ViewModel.ViewModelLocator";
             _typeNameTable[1] = "Object";
             _typeNameTable[2] = "Whistler.ViewModel.MainCategoriesViewModel";
             _typeNameTable[3] = "GalaSoft.MvvmLight.ViewModelBase";
             _typeNameTable[4] = "GalaSoft.MvvmLight.ObservableObject";
-            _typeNameTable[5] = "Whistler.View.CategoryDetails";
-            _typeNameTable[6] = "Windows.UI.Xaml.Controls.Page";
-            _typeNameTable[7] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[8] = "Whistler.View.MainCategories";
-            _typeNameTable[9] = "Whistler.View.MainPage";
-            _typeNameTable[10] = "String";
+            _typeNameTable[5] = "Whistler.ViewModel.MainViewModel";
+            _typeNameTable[6] = "Whistler.View.CategoryDetails";
+            _typeNameTable[7] = "Windows.UI.Xaml.Controls.Page";
+            _typeNameTable[8] = "Windows.UI.Xaml.Controls.UserControl";
+            _typeNameTable[9] = "Whistler.View.MainCategories";
+            _typeNameTable[10] = "Whistler.View.MainPage";
+            _typeNameTable[11] = "String";
+            _typeNameTable[12] = "Whistler.View.ProvidingOrProvider";
+            _typeNameTable[13] = "Whistler.View.SignUpPage";
 
-            _typeTable = new global::System.Type[11];
+            _typeTable = new global::System.Type[14];
             _typeTable[0] = typeof(global::Whistler.ViewModel.ViewModelLocator);
             _typeTable[1] = typeof(global::System.Object);
             _typeTable[2] = typeof(global::Whistler.ViewModel.MainCategoriesViewModel);
             _typeTable[3] = typeof(global::GalaSoft.MvvmLight.ViewModelBase);
             _typeTable[4] = typeof(global::GalaSoft.MvvmLight.ObservableObject);
-            _typeTable[5] = typeof(global::Whistler.View.CategoryDetails);
-            _typeTable[6] = typeof(global::Windows.UI.Xaml.Controls.Page);
-            _typeTable[7] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[8] = typeof(global::Whistler.View.MainCategories);
-            _typeTable[9] = typeof(global::Whistler.View.MainPage);
-            _typeTable[10] = typeof(global::System.String);
+            _typeTable[5] = typeof(global::Whistler.ViewModel.MainViewModel);
+            _typeTable[6] = typeof(global::Whistler.View.CategoryDetails);
+            _typeTable[7] = typeof(global::Windows.UI.Xaml.Controls.Page);
+            _typeTable[8] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
+            _typeTable[9] = typeof(global::Whistler.View.MainCategories);
+            _typeTable[10] = typeof(global::Whistler.View.MainPage);
+            _typeTable[11] = typeof(global::System.String);
+            _typeTable[12] = typeof(global::Whistler.View.ProvidingOrProvider);
+            _typeTable[13] = typeof(global::Whistler.View.SignUpPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -186,9 +192,12 @@ namespace Whistler.Whistler_XamlTypeInfo
         private object Activate_0_ViewModelLocator() { return new global::Whistler.ViewModel.ViewModelLocator(); }
         private object Activate_2_MainCategoriesViewModel() { return new global::Whistler.ViewModel.MainCategoriesViewModel(); }
         private object Activate_4_ObservableObject() { return new global::GalaSoft.MvvmLight.ObservableObject(); }
-        private object Activate_5_CategoryDetails() { return new global::Whistler.View.CategoryDetails(); }
-        private object Activate_8_MainCategories() { return new global::Whistler.View.MainCategories(); }
-        private object Activate_9_MainPage() { return new global::Whistler.View.MainPage(); }
+        private object Activate_5_MainViewModel() { return new global::Whistler.ViewModel.MainViewModel(); }
+        private object Activate_6_CategoryDetails() { return new global::Whistler.View.CategoryDetails(); }
+        private object Activate_9_MainCategories() { return new global::Whistler.View.MainCategories(); }
+        private object Activate_10_MainPage() { return new global::Whistler.View.MainPage(); }
+        private object Activate_12_ProvidingOrProvider() { return new global::Whistler.View.ProvidingOrProvider(); }
+        private object Activate_13_SignUpPage() { return new global::Whistler.View.SignUpPage(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -204,6 +213,7 @@ namespace Whistler.Whistler_XamlTypeInfo
                 userType = new global::Whistler.Whistler_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.Activator = Activate_0_ViewModelLocator;
                 userType.AddMemberName("MainCategoriesViewModel");
+                userType.AddMemberName("MainPageViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -230,39 +240,63 @@ namespace Whistler.Whistler_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 5:   //  Whistler.View.CategoryDetails
-                userType = new global::Whistler.Whistler_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_5_CategoryDetails;
+            case 5:   //  Whistler.ViewModel.MainViewModel
+                userType = new global::Whistler.Whistler_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("GalaSoft.MvvmLight.ViewModelBase"));
+                userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 6:   //  Windows.UI.Xaml.Controls.Page
-                xamlType = new global::Whistler.Whistler_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 7:   //  Windows.UI.Xaml.Controls.UserControl
-                xamlType = new global::Whistler.Whistler_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 8:   //  Whistler.View.MainCategories
+            case 6:   //  Whistler.View.CategoryDetails
                 userType = new global::Whistler.Whistler_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_8_MainCategories;
+                userType.Activator = Activate_6_CategoryDetails;
                 userType.AddMemberName("ViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 9:   //  Whistler.View.MainPage
+            case 7:   //  Windows.UI.Xaml.Controls.Page
+                xamlType = new global::Whistler.Whistler_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 8:   //  Windows.UI.Xaml.Controls.UserControl
+                xamlType = new global::Whistler.Whistler_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 9:   //  Whistler.View.MainCategories
                 userType = new global::Whistler.Whistler_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_9_MainPage;
+                userType.Activator = Activate_9_MainCategories;
+                userType.AddMemberName("ViewModel");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 10:   //  Whistler.View.MainPage
+                userType = new global::Whistler.Whistler_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_10_MainPage;
+                userType.AddMemberName("ViewModel");
                 userType.AddMemberName("CurrentPageKey");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 10:   //  String
+            case 11:   //  String
                 xamlType = new global::Whistler.Whistler_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 12:   //  Whistler.View.ProvidingOrProvider
+                userType = new global::Whistler.Whistler_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_12_ProvidingOrProvider;
+                userType.AddMemberName("ViewModel");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 13:   //  Whistler.View.SignUpPage
+                userType = new global::Whistler.Whistler_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_13_SignUpPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
                 break;
             }
             return xamlType;
@@ -274,15 +308,35 @@ namespace Whistler.Whistler_XamlTypeInfo
             var that = (global::Whistler.ViewModel.ViewModelLocator)instance;
             return that.MainCategoriesViewModel;
         }
-        private object get_1_MainCategories_ViewModel(object instance)
+        private object get_1_ViewModelLocator_MainPageViewModel(object instance)
+        {
+            var that = (global::Whistler.ViewModel.ViewModelLocator)instance;
+            return that.MainPageViewModel;
+        }
+        private object get_2_CategoryDetails_ViewModel(object instance)
+        {
+            var that = (global::Whistler.View.CategoryDetails)instance;
+            return that.ViewModel;
+        }
+        private object get_3_MainCategories_ViewModel(object instance)
         {
             var that = (global::Whistler.View.MainCategories)instance;
             return that.ViewModel;
         }
-        private object get_2_MainPage_CurrentPageKey(object instance)
+        private object get_4_MainPage_ViewModel(object instance)
+        {
+            var that = (global::Whistler.View.MainPage)instance;
+            return that.ViewModel;
+        }
+        private object get_5_MainPage_CurrentPageKey(object instance)
         {
             var that = (global::Whistler.View.MainPage)instance;
             return that.CurrentPageKey;
+        }
+        private object get_6_ProvidingOrProvider_ViewModel(object instance)
+        {
+            var that = (global::Whistler.View.ProvidingOrProvider)instance;
+            return that.ViewModel;
         }
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
@@ -298,16 +352,40 @@ namespace Whistler.Whistler_XamlTypeInfo
                 xamlMember.Getter = get_0_ViewModelLocator_MainCategoriesViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
+            case "Whistler.ViewModel.ViewModelLocator.MainPageViewModel":
+                userType = (global::Whistler.Whistler_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Whistler.ViewModel.ViewModelLocator");
+                xamlMember = new global::Whistler.Whistler_XamlTypeInfo.XamlMember(this, "MainPageViewModel", "Whistler.ViewModel.MainViewModel");
+                xamlMember.Getter = get_1_ViewModelLocator_MainPageViewModel;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Whistler.View.CategoryDetails.ViewModel":
+                userType = (global::Whistler.Whistler_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Whistler.View.CategoryDetails");
+                xamlMember = new global::Whistler.Whistler_XamlTypeInfo.XamlMember(this, "ViewModel", "Whistler.ViewModel.MainCategoriesViewModel");
+                xamlMember.Getter = get_2_CategoryDetails_ViewModel;
+                xamlMember.SetIsReadOnly();
+                break;
             case "Whistler.View.MainCategories.ViewModel":
                 userType = (global::Whistler.Whistler_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Whistler.View.MainCategories");
                 xamlMember = new global::Whistler.Whistler_XamlTypeInfo.XamlMember(this, "ViewModel", "Whistler.ViewModel.MainCategoriesViewModel");
-                xamlMember.Getter = get_1_MainCategories_ViewModel;
+                xamlMember.Getter = get_3_MainCategories_ViewModel;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Whistler.View.MainPage.ViewModel":
+                userType = (global::Whistler.Whistler_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Whistler.View.MainPage");
+                xamlMember = new global::Whistler.Whistler_XamlTypeInfo.XamlMember(this, "ViewModel", "Whistler.ViewModel.MainViewModel");
+                xamlMember.Getter = get_4_MainPage_ViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Whistler.View.MainPage.CurrentPageKey":
                 userType = (global::Whistler.Whistler_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Whistler.View.MainPage");
                 xamlMember = new global::Whistler.Whistler_XamlTypeInfo.XamlMember(this, "CurrentPageKey", "String");
-                xamlMember.Getter = get_2_MainPage_CurrentPageKey;
+                xamlMember.Getter = get_5_MainPage_CurrentPageKey;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Whistler.View.ProvidingOrProvider.ViewModel":
+                userType = (global::Whistler.Whistler_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Whistler.View.ProvidingOrProvider");
+                xamlMember = new global::Whistler.Whistler_XamlTypeInfo.XamlMember(this, "ViewModel", "Whistler.ViewModel.MainCategoriesViewModel");
+                xamlMember.Getter = get_6_ProvidingOrProvider_ViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             }

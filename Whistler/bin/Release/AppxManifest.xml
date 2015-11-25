@@ -7,11 +7,11 @@
 
     For more information on package manifest files, see http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="55227069-c353-4714-82bd-a3e262dcd792" Publisher="CN=AuthorName" Version="1.0.0.1" ProcessorArchitecture="neutral" />
+  <Identity Name="OneWhistleInc.DoWhistle" Publisher="CN=F051AE55-080D-45B4-AA48-DACE97218E0A" Version="1.0.0.5" ProcessorArchitecture="neutral" />
   <mp:PhoneIdentity PhoneProductId="78776c8c-c915-4b06-ae1c-1fd68eb46fcd" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
-    <DisplayName>Whistler</DisplayName>
-    <PublisherDisplayName>PublisherName</PublisherDisplayName>
+    <DisplayName>DoWhistle</DisplayName>
+    <PublisherDisplayName>OneWhistle Inc</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
   <Prerequisites>
@@ -27,10 +27,23 @@
         <m3:DefaultTile Wide310x150Logo="Assets\WideLogo.png" Square71x71Logo="Assets\Square71x71Logo.png"></m3:DefaultTile>
         <m3:SplashScreen Image="Assets\SplashScreen.png" />
       </m3:VisualElements>
+      <Extensions>
+        <Extension Category="windows.fileOpenPicker">
+          <FileOpenPicker>
+            <SupportedFileTypes>
+              <FileType>.jpg</FileType>
+              <FileType>.jpeg</FileType>
+              <FileType>.png</FileType>
+            </SupportedFileTypes>
+          </FileOpenPicker>
+        </Extension>
+      </Extensions>
     </Application>
   </Applications>
   <Capabilities>
     <Capability Name="internetClientServer" />
+    <Capability Name="picturesLibrary" />
+    <DeviceCapability Name="location" />
   </Capabilities>
   <build:Metadata>
     <build:Item Name="TargetFrameworkMoniker" Value="WindowsPhoneApp,Version=v8.1" />

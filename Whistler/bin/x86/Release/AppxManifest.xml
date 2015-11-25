@@ -7,7 +7,7 @@
 
     For more information on package manifest files, see http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="55227069-c353-4714-82bd-a3e262dcd792" Publisher="CN=AuthorName" Version="1.0.0.1" ProcessorArchitecture="x86" />
+  <Identity Name="55227069-c353-4714-82bd-a3e262dcd792" Publisher="CN=AuthorName" Version="1.0.0.2" ProcessorArchitecture="x86" />
   <mp:PhoneIdentity PhoneProductId="78776c8c-c915-4b06-ae1c-1fd68eb46fcd" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>Whistler</DisplayName>

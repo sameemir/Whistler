@@ -30,11 +30,28 @@ namespace Whistler.ViewModel
             }
         }
 
+
         public MainViewModel MainPageViewModel
         {
             get
             {
                 return ServiceLocator.Current.GetInstance<MainViewModel>();
+            }
+        }
+
+        public SettingsViewModel SettingsViewModel
+        {
+            get
+            {
+                return ServiceLocator.Current.GetInstance<SettingsViewModel>();
+            }
+        }
+
+        public LookingForViewModel LookingForViewModel
+        {
+            get
+            {
+                return ServiceLocator.Current.GetInstance<LookingForViewModel>();
             }
         }
 
@@ -46,6 +63,8 @@ namespace Whistler.ViewModel
            SimpleIoc.Default.Register<INavigationService>(() => CreateNavigationService());
            SimpleIoc.Default.Register<MainCategoriesViewModel>();
            SimpleIoc.Default.Register<MainViewModel>();
+           SimpleIoc.Default.Register<SettingsViewModel>();
+           SimpleIoc.Default.Register<LookingForViewModel>();
             
            
         }

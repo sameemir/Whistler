@@ -1,0 +1,95 @@
+﻿<Page
+    x:Class="Whistler.View.ProvidingOrProvider"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Whistler.View"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="Beige"
+     DataContext="{Binding MainCategoriesViewModel, Source={StaticResource Locator}}"
+   >
+    <Page.BottomAppBar>
+        <CommandBar>
+            <AppBarButton Label="Category" Icon="Account"/>
+            <AppBarButton Label="Settings" Icon="Add"/>
+            <AppBarButton Label="Whistles" Icon="AllApps"/>
+            <AppBarButton Label="More"  Icon="AttachCamera"/>
+        </CommandBar>
+    </Page.BottomAppBar>
+    <Grid HorizontalAlignment="Left" Margin="0,0.333,0,-0.333" Width="400">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="13*"/>
+            <ColumnDefinition Width="7*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height=".25*"></RowDefinition>
+            <RowDefinition Height=".25*"></RowDefinition>
+            <RowDefinition Height=".07*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Border Grid.Row="0" 
+                Background="Black"
+                Opacity="100"
+                Height="80" 
+                Margin="0,140,0,45" 
+                Grid.ColumnSpan="2" 
+                x:Name="borderProviding"
+                Tapped="borderProviding_Tapped"
+                >
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width=".8*"></ColumnDefinition>
+                    <ColumnDefinition Width=".2*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <TextBlock TextWrapping="Wrap" 
+                           FontSize="20" 
+                           Margin=" 20"   
+                           HorizontalAlignment="Center" 
+                           VerticalAlignment="Center" >
+                    <Run>Providing </Run>
+                    <Run Text="{Binding SelectedCategory.label}"></Run>
+                </TextBlock>
+
+                <Image Grid.Column="1" Height="45" Width="45" Margin="10,0,0,0" Source="ms-appx:///Assets/arrowIcon.png"></Image>
+            </Grid>
+
+        </Border>
+
+        <Border Grid.Row="1" 
+                Background="Black" 
+                Height="80" 
+                Margin="0,110,0,70" 
+                Opacity="100" 
+                Tapped="BorderLookingFor_Tapped"
+                x:Name="BorderLookingFor"
+                Grid.ColumnSpan="2">
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width=".8*"></ColumnDefinition>
+                    <ColumnDefinition Width=".2*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <TextBlock TextWrapping="Wrap" 
+                           FontSize="20"
+                           Margin="20"
+                           HorizontalAlignment="Center" 
+                           VerticalAlignment="Center" >
+                    <Run>Looking </Run>
+                    <Run Text="{Binding SelectedCategory.label}"></Run>
+                </TextBlock>
+
+                <Image Grid.Column="2" Height="45" Width="45" Margin="10,0,0,0" Source="ms-appx:///Assets/arrowIcon.png"></Image>
+            </Grid>
+
+        </Border>
+        <Border Grid.Row="2" Grid.ColumnSpan="2" Background="White">
+            <StackPanel Orientation="Horizontal">
+                <CheckBox Margin="10,0,0,0" BorderBrush="Black" x:Name="savePreferencesCheckbox" Style="{StaticResource CheckBoxStyle1}" Width="77" Height="54"></CheckBox>
+                <TextBlock Margin="-120,-20,0,0" x:Name="textboxSavePreferences" FontSize="20" VerticalAlignment="Center" Text="Save Preference" Foreground="Black"></TextBlock>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Page>

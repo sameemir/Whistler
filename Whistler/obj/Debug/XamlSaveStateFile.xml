@@ -1,8 +1,9 @@
 <XamlCompilerSaveState>
   <ReferenceAssemblyList>
-    <LocalAssembly PathName="c:\users\fahid\documents\visual studio 2013\projects\whistler\whistler\obj\debug\intermediatexaml\whistler.exe" HashGuid="5c5b1895-5b66-3252-d5ac-3b4d0b090652" />
+    <LocalAssembly PathName="c:\users\fahid\documents\visual studio 2013\projects\whistler\whistler\obj\debug\intermediatexaml\whistler.exe" HashGuid="dafa38ff-f557-d308-683a-43eccc139010" />
     <ReferenceAssembly PathName="c:\program files (x86)\microsoft sdks\windowsphoneapp\v8.1\extensionsdks\behaviorsxamlsdkmanaged\12.0\references\commonconfiguration\neutral\microsoft.xaml.interactions.dll" HashGuid="95a94f94-3917-d473-4f7c-18c4bd437046" />
     <ReferenceAssembly PathName="c:\program files (x86)\microsoft sdks\windowsphoneapp\v8.1\extensionsdks\behaviorsxamlsdkmanaged\12.0\references\commonconfiguration\neutral\microsoft.xaml.interactivity.dll" HashGuid="d25f59e6-dd81-900a-0dfc-55b39f6898ef" />
+    <ReferenceAssembly PathName="c:\users\fahid\documents\visual studio 2013\projects\whistler\packages\cloudinary.0.0.5\lib\cloudinary.dll" HashGuid="03418481-64d2-f626-9849-eca63a15c8ca" />
     <ReferenceAssembly PathName="c:\users\fahid\documents\visual studio 2013\projects\whistler\packages\mvvmlightlibs.5.2.0.0\lib\wpa81\galasoft.mvvmlight.dll" HashGuid="d702f8e6-9904-1220-8de7-be8614bf93e8" />
     <ReferenceAssembly PathName="c:\users\fahid\documents\visual studio 2013\projects\whistler\packages\mvvmlightlibs.5.2.0.0\lib\wpa81\galasoft.mvvmlight.extras.dll" HashGuid="f59e2cac-89a1-06f4-bbe7-18857251ef78" />
     <ReferenceAssembly PathName="c:\users\fahid\documents\visual studio 2013\projects\whistler\packages\mvvmlightlibs.5.2.0.0\lib\wpa81\galasoft.mvvmlight.platform.dll" HashGuid="27c4f135-c15f-18a2-cb9f-847748d33bdb" />

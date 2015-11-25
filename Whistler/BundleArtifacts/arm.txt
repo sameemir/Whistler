@@ -1,0 +1,4 @@
+MainPackage=C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\Whistler\bin\ARM\Release\Whistler_1.0.0.5_Bundle\Whistler_1.0.0.5_ARM.appx
+SymbolPackage=C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\Whistler\AppPackages\Whistler_1.0.0.5_Test\Whistler_1.0.0.5_ARM.appxsym
+ResourcePack=C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\Whistler\bin\ARM\Release\Whistler_1.0.0.5_Bundle\Whistler_1.0.0.5_scale-100.appx
+ResourcePack=C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\Whistler\bin\ARM\Release\Whistler_1.0.0.5_Bundle\Whistler_1.0.0.5_scale-140.appx

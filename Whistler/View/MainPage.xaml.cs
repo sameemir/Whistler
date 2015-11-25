@@ -4,12 +4,14 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Net.Http;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Whistler.Helpers;
 using Whistler.Model;
 using Whistler.ViewModel;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.Storage;
 using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
@@ -31,6 +33,8 @@ namespace Whistler.View
     {
         private WebServiceHandler webServiceHandler;
         private CategoryModel categories;
+        private WhistleUser applicationUser;
+
         public MainPage()
         {
             this.InitializeComponent();
@@ -46,6 +50,7 @@ namespace Whistler.View
         public void MainPage_Loaded(object sender, RoutedEventArgs e)
         {
             webServiceHandler = new WebServiceHandler();
+            applicationUser = WhistleUser.GetInstance();
         }
 
         /// <summary>
@@ -101,9 +106,47 @@ namespace Whistler.View
 
         }
 
-        private void doneButton_Tapped(object sender, TappedRoutedEventArgs e)
+        private async void doneButton_Tapped(object sender, TappedRoutedEventArgs e)
         {
-            LoadAllCategoriesData();
+            if (AppData.CheckNetworkConnection())
+            {
+                this.ViewModel.ShowOverlay();
+
+                //this.LoadAllCategoriesData();
+
+                HttpClient httpClient = new HttpClient();
+                string request = @"{""verify"": """ + textBoxCode.Text + "\"}";
+
+                var content = new StringContent(request, System.Text.Encoding.UTF8, "application/json");
+
+                HttpResponseMessage responseData = await httpClient.PostAsync(AppData.BaseAddress + "api/user/verifySignup", content);
+                if (responseData.StatusCode == System.Net.HttpStatusCode.OK)
+                {
+                    
+                    string whistleUser = await responseData.Content.ReadAsStringAsync();
+                    this.applicationUser =  JsonConvert.DeserializeObject<WhistleUser>(whistleUser);
+
+                    if (ApplicationData.Current.LocalSettings.Values.ContainsKey("whistleUser"))
+                        ApplicationData.Current.LocalSettings.Values["whistleUser"] = whistleUser;
+                       
+                    else
+                        ApplicationData.Current.LocalSettings.Values.Add("whistleUser", whistleUser);
+ 
+
+                    this.ViewModel.HideOverlay();
+                    this.LoadAllCategoriesData();
+                }
+
+                else
+                {
+                    string responseDataString = await responseData.Content.ReadAsStringAsync();
+                    MessageDialog msgBox = new MessageDialog(responseDataString);
+                    this.ViewModel.HideOverlay();
+                    await msgBox.ShowAsync();
+                }
+                
+                
+            }
         }
 
         public string CurrentPageKey
@@ -125,6 +168,46 @@ namespace Whistler.View
         {
 
 
+        }
+
+        private void appBarButtonSignup_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(SignUpPage));
+        }
+
+        private void AppBarButton_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(SettingsPage));
+        }
+
+        private void resetButton_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            textBoxCode.Text = "";
+            textboxEnterAgain.Text = "";
+        }
+
+        private async void imageButton_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            if (AppData.CheckNetworkConnection())
+            {
+                this.ViewModel.ShowOverlay();
+                var content = new StringContent(AppData.SignupRequest, System.Text.Encoding.UTF8, "application/json");
+                HttpClient httpClient = new HttpClient();
+                HttpResponseMessage responseData = await httpClient.PostAsync(AppData.BaseAddress + "api/user", content);
+                if (responseData.StatusCode == System.Net.HttpStatusCode.OK)
+                {
+                    this.ViewModel.HideOverlay();
+                    Frame.Navigate(typeof(MainPage));
+                }
+
+                else
+                {
+                    this.ViewModel.HideOverlay();
+                    string responseDataString = await responseData.Content.ReadAsStringAsync();
+                    MessageDialog msgBox = new MessageDialog(responseDataString);
+                    await msgBox.ShowAsync();
+                }
+            }
         }
     }
 }

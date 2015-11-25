@@ -90,3 +90,13 @@ C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\Whistler\obj\x86\R
 C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\Whistler\obj\x86\Release\MultipleQualifiersPerDimensionFound.txt
 C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\Whistler\obj\x86\Release\GalaSoft.MvvmLight.Platform.pri.xml
 C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\Whistler\obj\x86\Release\ProjectArchitectures.txt
+C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\bin\x86\Release\View\ProvidingOrProvider.xbf
+C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\bin\x86\Release\View\SignUpPage.xbf
+C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\obj\x86\Release\View\ProvidingOrProvider.g.i.cs
+C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\obj\x86\Release\View\ProvidingOrProvider.g.cs
+C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\obj\x86\Release\View\SignUpPage.g.i.cs
+C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\obj\x86\Release\View\SignUpPage.g.cs
+C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\obj\x86\Release\View\ProvidingOrProvider.xaml
+C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\obj\x86\Release\View\SignUpPage.xaml
+C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\obj\x86\Release\View\ProvidingOrProvider.xbf
+C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\obj\x86\Release\View\SignUpPage.xbf

@@ -8,15 +8,17 @@
     xmlns:ViewModel="using:Whistler.ViewModel"
     x:Class="Whistler.View.MainCategories"
     mc:Ignorable="d"
-    DataContext="{Binding MainCategoriesViewModel, Source={StaticResource Locator}}"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    DataContext="{Binding MainCategoriesViewModel, Source={StaticResource Locator}}">
+    <Page.Background>
+        <ImageBrush Stretch="Fill" ImageSource="ms-appx:///Assets/SplashScreen.png"/>
+    </Page.Background>
 
     <Page.BottomAppBar>
         <CommandBar>
             <AppBarButton Label="Category" Icon="Account"/>
             <AppBarButton Label="Settings" Icon="Add"/>
             <AppBarButton Label="Whistles" Icon="AllApps"/>
-            <AppBarButton Label="More"  Icon="AttachCamera"/>
+            <AppBarButton x:Name="appBarButtonMore" Click="appBarButtonMore_Click" Label="More" Icon="AttachCamera"/>
         </CommandBar>
     </Page.BottomAppBar>
     <Grid Background="#FCFCFC">
@@ -40,11 +42,38 @@
                         <!--Fill="#016064"-->
                         <Rectangle Fill="Black" Width="115" Height="100"/>
                         <Image Margin="0,0,10,0" Height="50" Width="50" HorizontalAlignment="Center" VerticalAlignment="Center"  Source="{Binding image}"></Image>
-                        <TextBlock Margin="0,50,0,0" Foreground="#79A6A8" HorizontalAlignment="Center" VerticalAlignment="Center" Text="{Binding label}"/>
+                        <TextBlock Margin="0,70,0,0" Foreground="#79A6A8" HorizontalAlignment="Center" VerticalAlignment="Center" Text="{Binding label}"/>
                     </Grid>
                 </DataTemplate>
             </ListView.ItemTemplate>
 
         </ListView>
+
+        <Grid Grid.Row="0" 
+              Grid.RowSpan="3"
+              Grid.Column="0"
+              Grid.ColumnSpan="2"
+              Visibility="{Binding GridVisibility}" 
+              VerticalAlignment="Stretch"
+              Margin="0,0,0,0" 
+              Opacity="0.5" 
+              Background="Black"
+              HorizontalAlignment="Stretch">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100" />
+                <RowDefinition Height="100" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <TextBlock Grid.Row="2" Text="Loading..." FontSize="24" Foreground="White" HorizontalAlignment="Center"/>
+
+            <ProgressBar Grid.Row="1" IsIndeterminate="{Binding IsActive}"/>
+        </Grid>
     </Grid>
 </Page>

@@ -7,16 +7,16 @@
     <SolutionConfiguration>Release|x86</SolutionConfiguration>
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>78776c8c-c915-4b06-ae1c-1fd68eb46fcd</PackageIdentityName>
-    <IntermediateOutputPath>C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\Whistler\obj\x86\Release\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\obj\x86\Release\</IntermediateOutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\Whistler\bin\x86\Release\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\bin\x86\Release\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\Whistler\bin\x86\Release\Whistler.exe">
+    <AppxPackagedFile Include="C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\bin\x86\Release\Whistler.exe">
       <PackagePath>Whistler.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\WindowsPhoneApp\v8.1\ExtensionSDKs\BehaviorsXamlSDKManaged\12.0\References\CommonConfiguration\Neutral\Microsoft.Xaml.Interactions.dll">
@@ -25,208 +25,268 @@
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\WindowsPhoneApp\v8.1\ExtensionSDKs\BehaviorsXamlSDKManaged\12.0\References\CommonConfiguration\Neutral\Microsoft.Xaml.Interactivity.dll">
       <PackagePath>Microsoft.Xaml.Interactivity.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\packages\MvvmLightLibs.5.2.0.0\lib\wpa81\GalaSoft.MvvmLight.dll">
+    <AppxPackagedFile Include="C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\packages\MvvmLightLibs.5.2.0.0\lib\wpa81\GalaSoft.MvvmLight.dll">
       <PackagePath>GalaSoft.MvvmLight.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\packages\MvvmLightLibs.5.2.0.0\lib\wpa81\GalaSoft.MvvmLight.Extras.dll">
+    <AppxPackagedFile Include="C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\packages\MvvmLightLibs.5.2.0.0\lib\wpa81\GalaSoft.MvvmLight.Extras.dll">
       <PackagePath>GalaSoft.MvvmLight.Extras.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\packages\MvvmLightLibs.5.2.0.0\lib\wpa81\GalaSoft.MvvmLight.Platform.dll">
+    <AppxPackagedFile Include="C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\packages\MvvmLightLibs.5.2.0.0\lib\wpa81\GalaSoft.MvvmLight.Platform.dll">
       <PackagePath>GalaSoft.MvvmLight.Platform.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\packages\CommonServiceLocator.1.3\lib\portable-net4+sl5+netcore45+wpa81+wp8\Microsoft.Practices.ServiceLocation.dll">
+    <AppxPackagedFile Include="C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\packages\CommonServiceLocator.1.3\lib\portable-net4+sl5+netcore45+wpa81+wp8\Microsoft.Practices.ServiceLocation.dll">
       <PackagePath>Microsoft.Practices.ServiceLocation.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\packages\Newtonsoft.Json.7.0.1\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll">
+    <AppxPackagedFile Include="C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\packages\Newtonsoft.Json.7.0.1\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\Whistler\Assets\addIcon.png">
+    <AppxPackagedFile Include="C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\Assets\addIcon.png">
       <PackagePath>Assets\addIcon.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\Whistler\Assets\arrowIcon.png">
+    <AppxPackagedFile Include="C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\Assets\arrowIcon.png">
       <PackagePath>Assets\arrowIcon.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\Whistler\Assets\bg.png">
+    <AppxPackagedFile Include="C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\Assets\bg.png">
       <PackagePath>Assets\bg.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\Whistler\Assets\blooddonorIcon.png">
+    <AppxPackagedFile Include="C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\Assets\blooddonorIcon.png">
       <PackagePath>Assets\blooddonorIcon.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\Whistler\Assets\callIcon.png">
+    <AppxPackagedFile Include="C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\Assets\callIcon.png">
       <PackagePath>Assets\callIcon.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\Whistler\Assets\codeTextBG.png">
+    <AppxPackagedFile Include="C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\Assets\codeTextBG.png">
       <PackagePath>Assets\codeTextBG.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\Whistler\Assets\communityIcon.png">
+    <AppxPackagedFile Include="C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\Assets\communityIcon.png">
       <PackagePath>Assets\communityIcon.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\Whistler\Assets\coneShapeIcon - left.png">
+    <AppxPackagedFile Include="C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\Assets\coneShapeIcon - left.png">
       <PackagePath>Assets\coneShapeIcon - left.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\Whistler\Assets\coneShapeIcon.png">
+    <AppxPackagedFile Include="C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\Assets\coneShapeIcon.png">
       <PackagePath>Assets\coneShapeIcon.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\Whistler\Assets\deliveryIcon.png">
+    <AppxPackagedFile Include="C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\Assets\deliveryIcon.png">
       <PackagePath>Assets\deliveryIcon.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\Whistler\Assets\dislikeIcon.png">
+    <AppxPackagedFile Include="C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\Assets\dislikeIcon.png">
       <PackagePath>Assets\dislikeIcon.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\Whistler\Assets\doneButton.png">
+    <AppxPackagedFile Include="C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\Assets\doneButton.png">
       <PackagePath>Assets\doneButton.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\Whistler\Assets\driveShareIcon.png">
+    <AppxPackagedFile Include="C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\Assets\driveShareIcon.png">
       <PackagePath>Assets\driveShareIcon.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\Whistler\Assets\firstAidIcon.png">
+    <AppxPackagedFile Include="C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\Assets\firstAidIcon.png">
       <PackagePath>Assets\firstAidIcon.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\Whistler\Assets\food-sub1.png">
+    <AppxPackagedFile Include="C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\Assets\food-sub1.png">
       <PackagePath>Assets\food-sub1.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\Whistler\Assets\food-sub2.png">
+    <AppxPackagedFile Include="C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\Assets\food-sub2.png">
       <PackagePath>Assets\food-sub2.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\Whistler\Assets\food-sub3.png">
+    <AppxPackagedFile Include="C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\Assets\food-sub3.png">
       <PackagePath>Assets\food-sub3.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\Whistler\Assets\food-sub4.png">
+    <AppxPackagedFile Include="C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\Assets\food-sub4.png">
       <PackagePath>Assets\food-sub4.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\Whistler\Assets\food-sub5.png">
+    <AppxPackagedFile Include="C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\Assets\food-sub5.png">
       <PackagePath>Assets\food-sub5.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\Whistler\Assets\foodIcon.png">
+    <AppxPackagedFile Include="C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\Assets\foodIcon.png">
       <PackagePath>Assets\foodIcon.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\Whistler\Assets\foodSearchIcon.png">
+    <AppxPackagedFile Include="C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\Assets\foodSearchIcon.png">
       <PackagePath>Assets\foodSearchIcon.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\Whistler\Assets\home-logo.png">
+    <AppxPackagedFile Include="C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\Assets\home-logo.png">
       <PackagePath>Assets\home-logo.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\Whistler\Assets\imageBG.png">
+    <AppxPackagedFile Include="C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\Assets\imageBG.png">
       <PackagePath>Assets\imageBG.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\Whistler\Assets\labelTransparentBG.png">
+    <AppxPackagedFile Include="C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\Assets\labelTransparentBG.png">
       <PackagePath>Assets\labelTransparentBG.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\Whistler\Assets\likeIcon.png">
+    <AppxPackagedFile Include="C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\Assets\likeIcon.png">
       <PackagePath>Assets\likeIcon.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\Whistler\Assets\Logo.scale-240.png">
+    <AppxPackagedFile Include="C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\Assets\Logo.scale-240.png">
       <PackagePath>Assets\Logo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\Whistler\Assets\mapDetailBG.png">
+    <AppxPackagedFile Include="C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\Assets\mapDetailBG.png">
       <PackagePath>Assets\mapDetailBG.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\Whistler\Assets\mapIcon-1.png">
+    <AppxPackagedFile Include="C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\Assets\mapIcon-1.png">
       <PackagePath>Assets\mapIcon-1.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\Whistler\Assets\mapIcon-2.png">
+    <AppxPackagedFile Include="C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\Assets\mapIcon-2.png">
       <PackagePath>Assets\mapIcon-2.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\Whistler\Assets\mapIcon-3.png">
+    <AppxPackagedFile Include="C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\Assets\mapIcon-3.png">
       <PackagePath>Assets\mapIcon-3.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\Whistler\Assets\mapIcon-4.png">
+    <AppxPackagedFile Include="C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\Assets\mapIcon-4.png">
       <PackagePath>Assets\mapIcon-4.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\Whistler\Assets\messageIcon.png">
+    <AppxPackagedFile Include="C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\Assets\messageIcon.png">
       <PackagePath>Assets\messageIcon.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\Whistler\Assets\mobileNumbetTextBG.png">
+    <AppxPackagedFile Include="C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\Assets\mobileNumbetTextBG.png">
       <PackagePath>Assets\mobileNumbetTextBG.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\Whistler\Assets\nextButton.png">
+    <AppxPackagedFile Include="C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\Assets\nextButton.png">
       <PackagePath>Assets\nextButton.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\Whistler\Assets\okButton.png">
+    <AppxPackagedFile Include="C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\Assets\okButton.png">
       <PackagePath>Assets\okButton.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\Whistler\Assets\orImage.png">
+    <AppxPackagedFile Include="C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\Assets\orImage.png">
       <PackagePath>Assets\orImage.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\Whistler\Assets\personalIcon.png">
+    <AppxPackagedFile Include="C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\Assets\personalIcon.png">
       <PackagePath>Assets\personalIcon.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\Whistler\Assets\pic1.png">
+    <AppxPackagedFile Include="C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\Assets\pic1.png">
       <PackagePath>Assets\pic1.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\Whistler\Assets\pic2.png">
+    <AppxPackagedFile Include="C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\Assets\pic2.png">
       <PackagePath>Assets\pic2.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\Whistler\Assets\previousButton.png">
+    <AppxPackagedFile Include="C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\Assets\previousButton.png">
       <PackagePath>Assets\previousButton.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\Whistler\Assets\resendButton.png">
+    <AppxPackagedFile Include="C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\Assets\resendButton.png">
       <PackagePath>Assets\resendButton.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\Whistler\Assets\resetButton.png">
+    <AppxPackagedFile Include="C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\Assets\resetButton.png">
       <PackagePath>Assets\resetButton.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\Whistler\Assets\saleIcon.png">
+    <AppxPackagedFile Include="C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\Assets\saleIcon.png">
       <PackagePath>Assets\saleIcon.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\Whistler\Assets\servicesIcon.png">
+    <AppxPackagedFile Include="C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\Assets\servicesIcon.png">
       <PackagePath>Assets\servicesIcon.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\Whistler\Assets\SmallLogo.scale-240.png">
+    <AppxPackagedFile Include="C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\Assets\SmallLogo.scale-240.png">
       <PackagePath>Assets\SmallLogo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\Whistler\Assets\SplashScreen.scale-240.png">
+    <AppxPackagedFile Include="C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\Assets\SplashScreen.scale-240.png">
       <PackagePath>Assets\SplashScreen.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\Whistler\Assets\Square71x71Logo.scale-240.png">
+    <AppxPackagedFile Include="C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\Assets\Square71x71Logo.scale-240.png">
       <PackagePath>Assets\Square71x71Logo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\Whistler\Assets\StoreLogo.scale-240.png">
+    <AppxPackagedFile Include="C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\Assets\StoreLogo.scale-240.png">
       <PackagePath>Assets\StoreLogo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\Whistler\Assets\taxiIcon.png">
+    <AppxPackagedFile Include="C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\Assets\taxiIcon.png">
       <PackagePath>Assets\taxiIcon.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\Whistler\Assets\trackIcon.png">
+    <AppxPackagedFile Include="C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\Assets\trackIcon.png">
       <PackagePath>Assets\trackIcon.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\Whistler\Assets\WideLogo.scale-240.png">
+    <AppxPackagedFile Include="C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\Assets\WideLogo.scale-240.png">
       <PackagePath>Assets\WideLogo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\Whistler\bin\x86\Release\App.xbf">
+    <AppxPackagedFile Include="C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\Assets\AutoService_SC.jpg">
+      <PackagePath>Assets\AutoService_SC.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\Assets\BloodDonor_SC.jpg">
+      <PackagePath>Assets\BloodDonor_SC.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\Assets\Community_SC.jpg">
+      <PackagePath>Assets\Community_SC.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\Assets\Delivery_SC.jpg">
+      <PackagePath>Assets\Delivery_SC.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\Assets\EverythingElse_SC.jpg">
+      <PackagePath>Assets\EverythingElse_SC.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\Assets\FirstAid_SC.jpg">
+      <PackagePath>Assets\FirstAid_SC.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\Assets\Food_SC.jpg">
+      <PackagePath>Assets\Food_SC.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\Assets\Loan_SC.jpg">
+      <PackagePath>Assets\Loan_SC.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\Assets\Organic_SC.jpg">
+      <PackagePath>Assets\Organic_SC.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\Assets\Personals_SC.jpg">
+      <PackagePath>Assets\Personals_SC.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\Assets\Rent_SC.jpg">
+      <PackagePath>Assets\Rent_SC.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\Assets\RideShare_SC.jpg">
+      <PackagePath>Assets\RideShare_SC.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\Assets\Sale_SC.jpg">
+      <PackagePath>Assets\Sale_SC.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\Assets\Service_SC.jpg">
+      <PackagePath>Assets\Service_SC.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\Assets\Taxi_SC.jpg">
+      <PackagePath>Assets\Taxi_SC.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\Assets\Tickets_SC.jpg">
+      <PackagePath>Assets\Tickets_SC.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\Assets\Track_SC.jpg">
+      <PackagePath>Assets\Track_SC.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\Assets\TravelHelp_SC.jpg">
+      <PackagePath>Assets\TravelHelp_SC.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\bin\x86\Release\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\Whistler\bin\x86\Release\Styles\Styles.xbf">
+    <AppxPackagedFile Include="C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\bin\x86\Release\Styles\Styles.xbf">
       <PackagePath>Styles\Styles.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\Whistler\bin\x86\Release\Styles\Colors.xbf">
+    <AppxPackagedFile Include="C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\bin\x86\Release\Styles\Colors.xbf">
       <PackagePath>Styles\Colors.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\Whistler\bin\x86\Release\Styles\MainStyles.xbf">
+    <AppxPackagedFile Include="C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\bin\x86\Release\Styles\MainStyles.xbf">
       <PackagePath>Styles\MainStyles.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\Whistler\bin\x86\Release\Styles\TextStyles.xbf">
+    <AppxPackagedFile Include="C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\bin\x86\Release\Styles\TextStyles.xbf">
       <PackagePath>Styles\TextStyles.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\Whistler\bin\x86\Release\View\CategoryDetails.xbf">
+    <AppxPackagedFile Include="C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\bin\x86\Release\View\CategoryDetails.xbf">
       <PackagePath>View\CategoryDetails.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\Whistler\bin\x86\Release\View\MainCategories.xbf">
+    <AppxPackagedFile Include="C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\bin\x86\Release\View\MainCategories.xbf">
       <PackagePath>View\MainCategories.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\Whistler\bin\x86\Release\View\MainPage.xbf">
+    <AppxPackagedFile Include="C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\bin\x86\Release\View\MainPage.xbf">
       <PackagePath>View\MainPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\Whistler\bin\x86\Release\Whistler.xr.xml">
+    <AppxPackagedFile Include="C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\bin\x86\Release\View\ProvidingOrProvider.xbf">
+      <PackagePath>View\ProvidingOrProvider.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\bin\x86\Release\View\SignUpPage.xbf">
+      <PackagePath>View\SignUpPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\bin\x86\Release\Whistler.xr.xml">
       <PackagePath>Whistler.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\Whistler\bin\x86\Release\resources.pri">
+    <AppxPackagedFile Include="C:\Users\Fahid\documents\visual studio 2013\Projects\Whistler\Whistler\bin\x86\Release\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

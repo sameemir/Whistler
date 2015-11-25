@@ -1,0 +1,33 @@
+﻿<Page
+    x:Class="Whistler.View.SignUpPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Whistler.View"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height=".2*"></RowDefinition>
+            <RowDefinition Height=".2*"></RowDefinition>
+            <RowDefinition Height=".35*"></RowDefinition>
+            <RowDefinition Height=".2*"></RowDefinition>
+            <RowDefinition Height=".2*"></RowDefinition>
+        </Grid.RowDefinitions>
+        
+        <TextBox x:Name="textboxName" Grid.Row="0" PlaceholderText="Enter your name" Header="Name" HorizontalAlignment="Left" Margin="0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="390"/>
+        <TextBox x:Name="textboxPhone" Grid.Row="1" PlaceholderText="Enter your phone" Header="Phone" HorizontalAlignment="Left" Margin="0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="390"/>
+        
+        <StackPanel Orientation="Vertical" Grid.Row="2">
+         <TextBlock FontSize="18" Text="Reachability"></TextBlock>
+            <CheckBox x:Name="checkboxCall" Margin="20,0,0,0" Content="Call"></CheckBox>
+            <CheckBox x:Name="checkboxSms" Margin="20,0,0,0" Content="SMS"></CheckBox>
+            <CheckBox x:Name="checkboxEmail" Margin="20,0,0,0" Content="Email"></CheckBox>
+        </StackPanel>
+        
+        <Button x:ConnectionId='1' Margin="20,0,0,0" Content="Submit" Grid.Row="3" x:Name="SubmitButton"                             ></Button>
+    </Grid>
+</Page>
+

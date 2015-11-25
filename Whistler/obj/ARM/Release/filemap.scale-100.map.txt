@@ -1,0 +1,8 @@
+﻿[ResourceMetadata]
+"ResourceId"			"filemap.scale-100"
+"ResourceDimensions"		"scale-100"
+
+[Files]
+"C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\Whistler\obj\ARM\Release\filemap.scale-100.pri"			"resources.pri"
+"C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\Whistler\obj\ARM\Release\PackageLayout\Assets\SplashScreen.scale-100.png"			"Assets\SplashScreen.scale-100.png"
+"C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\Whistler\obj\ARM\Release\PackageLayout\Assets\Logo.scale-100.png"			"Assets\Logo.scale-100.png"
