@@ -55,6 +55,14 @@ namespace Whistler.ViewModel
             }
         }
 
+        public WhistlerListViewModel WhistlerListViewModel
+        {
+            get
+            {
+                return ServiceLocator.Current.GetInstance<WhistlerListViewModel>();
+            }
+        }
+
         public ViewModelLocator()
         {
             ServiceLocator.SetLocatorProvider(() => SimpleIoc.Default);
@@ -65,8 +73,8 @@ namespace Whistler.ViewModel
            SimpleIoc.Default.Register<MainViewModel>();
            SimpleIoc.Default.Register<SettingsViewModel>();
            SimpleIoc.Default.Register<LookingForViewModel>();
-            
-           
+           SimpleIoc.Default.Register<WhistlerListViewModel>();
+          
         }
         private INavigationService CreateNavigationService()
         {

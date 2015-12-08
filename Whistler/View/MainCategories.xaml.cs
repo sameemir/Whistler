@@ -42,6 +42,8 @@ namespace Whistler.View
             this.InitializeComponent();
             this.Loaded += MainCategories_Loaded;
 
+            AppData.GetGeolocation();
+            
             webServiceHandler = new WebServiceHandler();
 
             if (ApplicationData.Current.LocalSettings.Values.ContainsKey("whistleUser"))

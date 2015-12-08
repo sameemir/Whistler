@@ -51,8 +51,6 @@ namespace Whistler.ViewModel
             }
         }
 
-
-
         internal void ShowOverlay()
         {
             this.IsActive = true;

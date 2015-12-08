@@ -1,5 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Roots >
+  <Roots.Interfaces>
+    <RootInterface FullName="Windows.UI.Xaml.Data.IValueConverter" />
+  </Roots.Interfaces>
   <Roots.PropertyPathNames>
     <RootPropertyPathName Name="TemplateSettings" />
     <RootPropertyPathName Name="CurtainOffToOnOffset" />
@@ -17,6 +20,18 @@
     <RootPropertyPathName Name="subcategories" />
     <RootPropertyPathName Name="label" />
     <RootPropertyPathName Name="image" />
+    <RootPropertyPathName Name="MatchingWhistles" />
+    <RootPropertyPathName Name="matchingWhistles" />
+    <RootPropertyPathName Name="phone" />
+    <RootPropertyPathName Name="Whistles" />
+    <RootPropertyPathName Name="comment" />
+    <RootPropertyPathName Name="category" />
+    <RootPropertyPathName Name="dis" />
+    <RootPropertyPathName Name="name" />
+    <RootPropertyPathName Name="photo" />
+    <RootPropertyPathName Name="Count" />
+    <RootPropertyPathName Name="AppData" />
+    <RootPropertyPathName Name="IsProvider" />
     <RootPropertyPathName Name="Title" />
     <RootPropertyPathName Name="GridVisibility" />
     <RootPropertyPathName Name="IsActive" />
@@ -25,13 +40,14 @@
     <RootPropertyPathName Name="MainPageViewModel" />
     <RootPropertyPathName Name="AppUser" />
     <RootPropertyPathName Name="newUser" />
-    <RootPropertyPathName Name="phone" />
-    <RootPropertyPathName Name="name" />
-    <RootPropertyPathName Name="photo" />
     <RootPropertyPathName Name="SettingsViewModel" />
     <RootPropertyPathName Name="Interval" />
     <RootPropertyPathName Name="Radius" />
     <RootPropertyPathName Name="Limit" />
+    <RootPropertyPathName Name="WhistlerListViewModel" />
+    <RootPropertyPathName Name="_id" />
+    <RootPropertyPathName Name="dislikes" />
+    <RootPropertyPathName Name="likes" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
     <RootType FullName="Windows.UI.Xaml.Application">
@@ -193,6 +209,7 @@
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Width" />
       <RootProperty Name="Visibility" />
+      <RootProperty Name="Margin" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
       <RootProperty Name="Foreground" />
@@ -206,7 +223,12 @@
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Text" />
       <RootProperty Name="Inlines" />
+      <RootProperty Name="Tag" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Width" />
       <RootEvent Name="Tapped" />
+      <RootEvent Name="Loaded" />
+      <RootEvent Name="SelectionChanged" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.VisualTransition">
       <RootProperty Name="From" />
@@ -227,6 +249,7 @@
       <RootProperty Name="Child" />
       <RootProperty Name="Margin" />
       <RootProperty Name="Opacity" />
+      <RootProperty Name="Tag" />
       <RootEvent Name="Tapped" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Shapes.Rectangle">
@@ -267,6 +290,8 @@
       <RootProperty Name="RelativeSource" />
       <RootProperty Name="Source" />
       <RootProperty Name="Mode" />
+      <RootProperty Name="Converter" />
+      <RootProperty Name="TargetNullValue" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Data.RelativeSource">
       <RootProperty Name="Mode" />
@@ -319,6 +344,7 @@
       <RootProperty Name="Background" />
       <RootProperty Name="BottomAppBar" />
       <RootProperty Name="Content" />
+      <RootProperty Name="Resources" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.CommandBar">
       <RootProperty Name="PrimaryCommands" />
@@ -333,6 +359,10 @@
       <RootProperty Name="ItemsSource" />
       <RootProperty Name="ItemsPanel" />
       <RootProperty Name="ItemTemplate" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="ItemContainerStyle" />
+      <RootEvent Name="SelectionChanged" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ItemsPanelTemplate">
       <RootProperty Name="Template" />
@@ -356,6 +386,7 @@
       <RootProperty Name="Visibility" />
       <RootProperty Name="Tag" />
       <RootEvent Name="Tapped" />
+      <RootEvent Name="Loaded" />
     </RootType>
     <RootType FullName="Whistler.View.CategoryDetails" />
     <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
@@ -369,6 +400,8 @@
     </RootType>
     <RootType FullName="Whistler.View.CreateWhistlePage" />
     <RootType FullName="Whistler.ViewModel.LookingForViewModel" />
+    <RootType FullName="Whistler.Converter.DoubleToTwoDigitsConverter" />
+    <RootType FullName="Whistler.Converter.ProviderToTitle" />
     <RootType FullName="Windows.UI.Xaml.Controls.Canvas">
       <RootMethod Name="GetZIndex" />
       <RootMethod Name="SetZIndex" />
@@ -384,11 +417,11 @@
       <RootProperty Name="Text" />
       <RootProperty Name="FontWeight" />
     </RootType>
-    <RootType FullName="Whistler.View.LookingFor" />
     <RootType FullName="Windows.UI.Xaml.Media.ImageBrush">
-      <RootProperty Name="Stretch" />
       <RootProperty Name="ImageSource" />
+      <RootProperty Name="Stretch" />
     </RootType>
+    <RootType FullName="Whistler.View.LookingFor" />
     <RootType FullName="Windows.UI.Xaml.Controls.ProgressBar">
       <RootProperty Name="IsIndeterminate" />
     </RootType>
@@ -419,5 +452,8 @@
     <RootType FullName="Whistler.View.ProvidingOrProvider" />
     <RootType FullName="Whistler.View.SettingsPage" />
     <RootType FullName="Whistler.View.SignUpPage" />
+    <RootType FullName="Whistler.View.WhistlerDetail" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ListViewItem" />
+    <RootType FullName="Whistler.View.WhistlerList" />
   </Roots.RootTypes>
 </Roots>

@@ -20,6 +20,7 @@ namespace Whistler.Model
             AllCategoriesUrl = "http://api.dowhistle.com/api/categories";
             NoInternetMessage = "No Internet available! Please check your internet connection";
 //            BaseAddress = new Uri("http://api.dowhistle.com/");
+            BaseAddressLive = new Uri("http://api.dowhistle.com/");
             BaseAddress = new Uri("http://whistle-dev.herokuapp.com/");
             GeoLocation = null;
 
@@ -73,8 +74,12 @@ namespace Whistler.Model
 
         public static Category selectedCategory { get; set; }
 
+        public static String selectedSubCategory { get; set; }
+        
         public static bool IsProvider { get; set; }
 
         public static string SignupRequest { get; set; }
+
+        public static Uri BaseAddressLive { get; set; }
     }
 }

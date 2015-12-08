@@ -7,7 +7,7 @@
 
     For more information on package manifest files, see http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="OneWhistleInc.DoWhistle" Publisher="CN=F051AE55-080D-45B4-AA48-DACE97218E0A" Version="1.0.0.5" ProcessorArchitecture="neutral" />
+  <Identity Name="OneWhistleInc.DoWhistle" Publisher="CN=F051AE55-080D-45B4-AA48-DACE97218E0A" Version="1.0.0.7" ProcessorArchitecture="neutral" />
   <mp:PhoneIdentity PhoneProductId="78776c8c-c915-4b06-ae1c-1fd68eb46fcd" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>DoWhistle</DisplayName>

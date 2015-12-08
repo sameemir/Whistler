@@ -85,11 +85,15 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Converter\DoubleToTwoDigitsConverter.cs" />
+    <Compile Include="Converter\ProviderToTitle.cs" />
     <Compile Include="Helpers\IWebServiceHandler.cs" />
     <Compile Include="Helpers\WebServiceHandler.cs" />
+    <Compile Include="Model\AnonyousWhistleModel.cs" />
     <Compile Include="Model\AppData.cs" />
     <Compile Include="Model\CategoryModel.cs" />
     <Compile Include="Model\CloudinaryCredentials.cs" />
+    <Compile Include="Model\CloudinaryRequest.cs" />
     <Compile Include="Model\UserModel.cs" />
     <Compile Include="Model\WhistleUser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -100,6 +104,7 @@
     <Compile Include="ViewModel\RegisterViewModel.cs" />
     <Compile Include="ViewModel\SettingsViewModel.cs" />
     <Compile Include="ViewModel\ViewModelLocator.cs" />
+    <Compile Include="ViewModel\WhistlerListViewModel.cs" />
     <Compile Include="View\CategoryDetails.xaml.cs">
       <DependentUpon>CategoryDetails.xaml</DependentUpon>
     </Compile>
@@ -133,6 +138,10 @@
     <Compile Include="View\SignUpPage.xaml.cs">
       <DependentUpon>SignUpPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\WhistlerDetail.xaml.cs">
+      <DependentUpon>WhistlerDetail.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\WhistlerList.xaml.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -194,6 +203,7 @@
     <Content Include="Assets\Personals_SC.jpg" />
     <Content Include="Assets\pic1.png" />
     <Content Include="Assets\pic2.png" />
+    <Content Include="Assets\pinPoint.png" />
     <Content Include="Assets\previousButton.png" />
     <Content Include="Assets\Rent_SC.jpg" />
     <Content Include="Assets\resendButton.png" />
@@ -285,14 +295,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="View\WhistlerDetail.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\WhistlerList.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <SDKReference Include="BehaviorsXamlSDKManaged, Version=12.0" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Cloudinary">
-      <HintPath>..\packages\Cloudinary.0.0.5\lib\Cloudinary.dll</HintPath>
-    </Reference>
     <Reference Include="GalaSoft.MvvmLight">
       <HintPath>..\packages\MvvmLightLibs.5.2.0.0\lib\wpa81\GalaSoft.MvvmLight.dll</HintPath>
     </Reference>

@@ -123,3 +123,8 @@ C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\Whistler\obj\ARM\R
 C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\Whistler\obj\ARM\Release\View\MyProfile.xbf
 C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\Whistler\obj\ARM\Release\View\SettingsPage.xbf
 C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\Whistler\obj\ARM\Release\Styles\Styles.xbf
+C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\Whistler\bin\ARM\Release\View\WhistlerList.xbf
+C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\Whistler\obj\ARM\Release\View\WhistlerList.g.i.cs
+C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\Whistler\obj\ARM\Release\View\WhistlerList.g.cs
+C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\Whistler\obj\ARM\Release\View\WhistlerList.xaml
+C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\Whistler\obj\ARM\Release\View\WhistlerList.xbf

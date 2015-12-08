@@ -175,6 +175,9 @@
     <AppxPackagedFile Include="C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\Whistler\Assets\pic2.png">
       <PackagePath>Assets\pic2.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\Whistler\Assets\pinPoint.png">
+      <PackagePath>Assets\pinPoint.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\Whistler\Assets\previousButton.png">
       <PackagePath>Assets\previousButton.png</PackagePath>
     </AppxPackagedFile>
@@ -334,6 +337,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\Whistler\bin\ARM\Release\View\SignUpPage.xbf">
       <PackagePath>View\SignUpPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\Whistler\bin\ARM\Release\View\WhistlerList.xbf">
+      <PackagePath>View\WhistlerList.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Fahid\Documents\Visual Studio 2013\Projects\Whistler\Whistler\bin\ARM\Release\Whistler.xr.xml">
       <PackagePath>Whistler.xr.xml</PackagePath>

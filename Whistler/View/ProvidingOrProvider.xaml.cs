@@ -7,6 +7,7 @@ using Whistler.Model;
 using Whistler.ViewModel;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.Storage;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -48,6 +49,19 @@ namespace Whistler.View
         /// This parameter is typically used to configure the page.</param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
+            if (ApplicationData.Current.LocalSettings.Values.ContainsKey("isProviderChecked"))
+            {
+                if((bool)ApplicationData.Current.LocalSettings.Values["isProviderChecked"] == false)
+                {
+                    AppData.IsProvider = false;
+                    Frame.Navigate(typeof(LookingFor));
+                }
+                else
+                {
+                    AppData.IsProvider = true;
+                    Frame.Navigate(typeof(LookingFor));
+                }
+            }
             if (this.ViewModel.SelectedCategory.name.Equals("blood"))
             {
                 BitmapImage bitmapImage = new BitmapImage(new Uri("ms-appx:///Assets/BloodDonor_SC.jpg", UriKind.Absolute));
@@ -165,12 +179,35 @@ namespace Whistler.View
         private void BorderLookingFor_Tapped(object sender, TappedRoutedEventArgs e)
         {
             AppData.IsProvider = false;
+            if(savePreferencesCheckbox.IsChecked.Value)
+            {
+                if(ApplicationData.Current.LocalSettings.Values.ContainsKey("isProviderChecked"))
+                {
+                    ApplicationData.Current.LocalSettings.Values["isProviderChecked"] = false;
+                }
+                else
+                {
+                    ApplicationData.Current.LocalSettings.Values.Add("isProviderChecked", false);
+                }
+            }
             Frame.Navigate(typeof(LookingFor));
         }
 
         private void borderProviding_Tapped(object sender, TappedRoutedEventArgs e)
         {
             AppData.IsProvider = true;
+            if (savePreferencesCheckbox.IsChecked.Value)
+            {
+                if (ApplicationData.Current.LocalSettings.Values.ContainsKey("isProviderChecked"))
+                {
+                    ApplicationData.Current.LocalSettings.Values["isProviderChecked"] = true;
+                }
+                else
+                {
+                    ApplicationData.Current.LocalSettings.Values.Add("isProviderChecked", true);
+                }
+            }
+            Frame.Navigate(typeof(LookingFor));
         }
     }
 }

@@ -52,6 +52,7 @@ Assets\personalIcon.png
 Assets\Personals_SC.jpg
 Assets\pic1.png
 Assets\pic2.png
+Assets\pinPoint.png
 Assets\previousButton.png
 Assets\Rent_SC.jpg
 Assets\resendButton.png
@@ -93,4 +94,6 @@ View\PrivacyStatement.xbf
 View\ProvidingOrProvider.xbf
 View\SettingsPage.xbf
 View\SignUpPage.xbf
+View\WhistlerDetail.xbf
+View\WhistlerList.xbf
 Whistler.xr.xml

@@ -4,7 +4,9 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Text;
 using System.Threading.Tasks;
 using Whistler.Model;
 using Whistler.ViewModel;
@@ -150,24 +152,47 @@ namespace Whistler.View
             HttpClient httpClient = new HttpClient();
             httpClient.BaseAddress = AppData.CloudinaryUrl;
             ByteArrayContent content = new ByteArrayContent(fileBytes);
-             
 
+            httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json")); 
             MultipartFormDataContent form = new MultipartFormDataContent();
 
-            form.Add(new StringContent(CloudinaryCredentials.GetInstance().credentials.api_key), "api_key");
-            form.Add(new StringContent(CloudinaryCredentials.GetInstance().credentials.timetamp.ToString()), "timestamp");
-            form.Add(new StringContent(CloudinaryCredentials.GetInstance().credentials.signature), "signature");
-            form.Add(new StringContent("http://www.controltechinc.com/news/wp-content/uploads/path-choise.jpg"), "file", Guid.NewGuid().ToString()+".jpg");
-            //form.Add(new ByteArrayContent(fileBytes, 0, fileBytes.Count()),"file",Guid.NewGuid().ToString()+".jpg");
-            
-           
-            HttpResponseMessage response = await httpClient.PostAsync(CloudinaryCredentials.GetInstance().credentials.cloud_name + "/image/upload",form);
+            ////form.Add(new StringContent("http://www.controltechinc.com/news/wp-content/uploads/path-choise.jpg"), "file", Guid.NewGuid().ToString() + ".jpg");
+
+            CloudinaryRequest request = new CloudinaryRequest();
+            request.file = Convert.ToBase64String(fileBytes);
+            request.signature = CloudinaryCredentials.GetInstance().credentials.signature;
+            request.api_key = CloudinaryCredentials.GetInstance().credentials.api_key;
+            request.public_id = CloudinaryCredentials.GetInstance().credentials.public_id;
+            request.timestamp = CloudinaryCredentials.GetInstance().credentials.timetamp.ToString();
+
+            string postBody = JsonConvert.SerializeObject(request); 
+
+            //form.Add(new ByteArrayContent(fileBytes, 0, fileBytes.Count()));
+            //form.Add(new StringContent(CloudinaryCredentials.GetInstance().credentials.api_key), "api_key");
+            //form.Add(new StringContent(CloudinaryCredentials.GetInstance().credentials.timetamp.ToString()), "timestamp");
+            //form.Add(new StringContent(CloudinaryCredentials.GetInstance().credentials.signature), "signature");
+            //form.Add(new StringContent(CloudinaryCredentials.GetInstance().credentials.public_id), "public_id");
+
+            //httpClient.DefaultRequestHeaders.Add("multipart/form-data; boundary=---011000010111000001101001", "-----011000010111000001101001\r\nContent-Disposition: form-data; name=\"file\"\r\n\r\nhttp://facewallpaper.com/wp-content/uploads/2015/10/Cool-Wallpaper-COWA045.jpg\r\n-----011000010111000001101001\r\nContent-Disposition: form-data; name=\"api_key\"\r\n\r\n877962912131272\r\n-----011000010111000001101001\r\nContent-Disposition: form-data; name=\"timestamp\"\r\n\r\n1448545328\r\n-----011000010111000001101001\r\nContent-Disposition: form-data; name=\"signature\"\r\n\r\n7bf9de1286426d42a332a5abff43a94a9a4bbfc9\r\n-----011000010111000001101001\r\nContent-Disposition: form-data; name=\"public_key\"\r\n\r\nhhhh\r\n-----011000010111000001101001--");
+
+
+            HttpResponseMessage response = await httpClient.PostAsync(CloudinaryCredentials.GetInstance().credentials.cloud_name + "/image/upload",new StringContent(postBody, Encoding.UTF8, "application/json"));
             string serverResponse = await response.Content.ReadAsStringAsync();
 
-            if(serverResponse !=null)
+            if (serverResponse != null)
             {
 
             }
+
+
+            //var client = new RestClient("https://api.cloudinary.com/v1_1/hbfzopaol/image/upload");
+            //var request = new RestRequest(Method.POST);
+            //request.AddHeader("postman-token", "d7916932-1aca-dbbd-2094-b40cae1e366c");
+            //request.AddHeader("cache-control", "no-cache");
+            //request.AddHeader("content-type", "multipart/form-data; boundary=---011000010111000001101001");
+            //request.AddParameter("multipart/form-data; boundary=---011000010111000001101001", "-----011000010111000001101001\r\nContent-Disposition: form-data; name=\"file\"\r\n\r\nhttp://facewallpaper.com/wp-content/uploads/2015/10/Cool-Wallpaper-COWA045.jpg\r\n-----011000010111000001101001\r\nContent-Disposition: form-data; name=\"api_key\"\r\n\r\n877962912131272\r\n-----011000010111000001101001\r\nContent-Disposition: form-data; name=\"timestamp\"\r\n\r\n1448545328\r\n-----011000010111000001101001\r\nContent-Disposition: form-data; name=\"signature\"\r\n\r\n7bf9de1286426d42a332a5abff43a94a9a4bbfc9\r\n-----011000010111000001101001\r\nContent-Disposition: form-data; name=\"public_key\"\r\n\r\nhhhh\r\n-----011000010111000001101001--", ParameterType.RequestBody);
+            //IRestResponse response = client.Execute(request);
+
         }
 
         private async Task<string> GetCredentialsForCloudinary()

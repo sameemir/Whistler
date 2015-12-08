@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using Whistler.Model;
 using Whistler.ViewModel;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
@@ -163,6 +164,7 @@ namespace Whistler.View
 
         private void Grid_Tapped(object sender, TappedRoutedEventArgs e)
         {
+            Whistler.Model.AppData.selectedSubCategory =  (((FrameworkElement)sender).DataContext as SubCategory).name;
             this.Frame.Navigate(typeof(ProvidingOrProvider));
         }
     }

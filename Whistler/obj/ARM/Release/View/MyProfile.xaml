@@ -50,7 +50,7 @@
         </Button>
         <StackPanel Grid.Row="3">
             <TextBox BorderThickness="1" Text="{Binding AppUser.newUser.name}" Margin="10" BorderBrush="Black" x:Name="textboxName" PlaceholderText="Please Enter Your Name" />
-            <TextBox x:ConnectionId='4' x:Name="textboxPhone" Text="{Binding AppUser.newUser.phone}"                              InputScope="NameOrPhoneNumber" Margin="10" BorderBrush="Black" BorderThickness="1"  PlaceholderText="Enter Your No. with Country Code"/>
+            <TextBox x:ConnectionId='4' x:Name="textboxPhone" Text="{Binding AppUser.newUser.phone}" InputScope="TelephoneNumber"                              Margin="10" BorderBrush="Black" BorderThickness="1"  PlaceholderText="Enter Your No. with Country Code"/>
 
             <RadioButton x:Name="radioButtonShowPhone" IsChecked="True" Margin="10" Content="Show phone number to Others" Foreground="Black" Style="{StaticResource RadioButtonStyle1}"/>
             <RadioButton x:Name="radioButtonShowSMS"  IsChecked="True" Margin="10,0,10,10" Content="Show sms to Others" Foreground="Black" Style="{StaticResource RadioButtonStyle1}"/>

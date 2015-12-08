@@ -277,6 +277,11 @@
 						<Value>Assets\pic2.png</Value>
 					</Candidate>
 				</NamedResource>
+				<NamedResource name="pinPoint.png" uri="ms-resource://OneWhistleInc.DoWhistle/Files/Assets/pinPoint.png">
+					<Candidate type="Path">
+						<Value>Assets\pinPoint.png</Value>
+					</Candidate>
+				</NamedResource>
 				<NamedResource name="previousButton.png" uri="ms-resource://OneWhistleInc.DoWhistle/Files/Assets/previousButton.png">
 					<Candidate type="Path">
 						<Value>Assets\previousButton.png</Value>
@@ -469,6 +474,11 @@
 				<NamedResource name="SignUpPage.xbf" uri="ms-resource://OneWhistleInc.DoWhistle/Files/View/SignUpPage.xbf">
 					<Candidate type="Path">
 						<Value>View\SignUpPage.xbf</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="WhistlerList.xbf" uri="ms-resource://OneWhistleInc.DoWhistle/Files/View/WhistlerList.xbf">
+					<Candidate type="Path">
+						<Value>View\WhistlerList.xbf</Value>
 					</Candidate>
 				</NamedResource>
 			</ResourceMapSubtree>
